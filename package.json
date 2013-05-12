@@ -25,13 +25,14 @@
   },
   "devDependencies": {
     "assemble": ">= 0.3.76",
+    "helper-lib": ">= 0.2.3",
     "grunt-contrib-clean": "~0.4.0",
     "grunt": "~0.4.1"
   },
   "keywords": [
     "gruntplugin",
-    "site generator",
-    "blog generator",
+    "helpers",
+    "handlebars helpers",
     "handlebars",
     "templates"
   ]
