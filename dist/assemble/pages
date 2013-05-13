@@ -1,0 +1,41 @@
+
+<h1>Pages (Collection) Variables</h1>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li><a href="each-pages"></a></li>
+        <li><a href="pages">Pages (Collection) Variables</a></li>
+        <li><a href="collections.md">Associative arrays</a></li>
+        <li><a href="switch.md"></a></li>
+        <li><a href="copy.md">File Helpers</a></li>
+        <li><a href="glob.md"></a></li>
+        <li><a href="include.md">Include</a></li>
+        <li><a href="hightlight.md"></a></li>
+        <li><a href="html.md">HTML Helpers</a></li>
+        <li><a href="inspect.md">Inspect Helper</a></li>
+        <li><a href="property.md">JSON Properties</a></li>
+        <li><a href="stringify.md">Stringify Helper</a></li>
+        <li><a href="value.md">Value Helpers</a></li>
+        <li><a href="absolute.md">Absolute Path Helpers</a></li>
+        <li><a href="basename.md">basename</a></li>
+        <li><a href="directory.md">Path Helpers</a></li>
+        <li><a href="extname.md">extname</a></li>
+        <li><a href="filename.md">filename</a></li>
+        <li><a href="relative.md">Relative Path Helpers</a></li>
+        <li><a href="authors.md"></a></li>
+        <li><a href="chapters.md"></a></li>
+        <li><a href="embed.md">Embed Helper</a></li>
+        <li><a href="jsfiddle.md">jsFiddle Helper</a></li>
+        <li><a href="roadmap.md"></a></li>
+        <li><a href="travis.md"></a></li>
+        <li><a href="hyphenate.md"></a></li>
+        <li><a href="occurences.md"></a></li>
+        <li><a href="replace.md"></a></li>
+        
+      </ul>
+      <ul class="nav"><li><a href="http://github.com/assemble/">Visit Assemble</a></li></ul>
+    </div>
+  </div>
+</div>
+

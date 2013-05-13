@@ -1,0 +1,29 @@
+---
+title: Relative Path Helpers
+from: ./dist/md/authors.md
+to: ./dist/md/changelog.md
+---
+# {{title}}
+
+## `\{{relative}}` helper
+
+**01**: `{{relative from to}}`
+**04**: `{{relative "." assets}}`
+**05**: `{{relative 'src/content' assets}}`
+**06**: `{{relative currentPage.dest assets}}`
+**07**: `{{relative currentPage.dest currentPage.src}}`
+**02**: `{{relative 'C:\\orandea\\test\\aaa' 'C:\\orandea\\impl\\bbb'}}`
+**03**: `{{relative "src/content/lib/text.md" "src/content/toc.md"}}`
+**08**: `{{relative "src/content/toc.md" "js-yaml"}}`
+**09**: `{{relative "./" "js-yaml/bin"}}`
+**10**: `{{relative "src/content/toc.md" "js-yaml"}}`
+**11**: `{{relative "js-yaml/bin" "lib"}}`
+**12**: `{{relative "." "js-yaml/bin"}}`
+
+<a href="{{relative "src/content/toc.md" "lib"}}/assets/css/styles.css"></a> 
+<a href="{{relative "." "lib"}}/assets/css/styles.css"></a> 
+<a href="{{relative " " "lib"}}/assets/css/styles.css"></a> 
+<a href="{{relative "/" "lib"}}/assets/css/styles.css"></a> 
+<a href="{{relative "src/content/toc.md" "."}}/assets/css/styles.css"></a> 
+<a href="{{relative "src/content/toc.md" "/"}}/assets/css/styles.css"></a> 
+

@@ -16,9 +16,9 @@ module.exports = function(grunt) {
 
     assemble: {
       options: {
+        ext: '',
         flatten: true,
-        assets: 'examples/assets',
-        content: './src/content'
+        assets: 'dist/assets'
       },
       pages: {
         options: {
@@ -32,79 +32,31 @@ module.exports = function(grunt) {
         dest: 'dist/'
       },
       strings: {
-        options: {ext: ''},
-        files: [
-          { src: ['src/templates/strings/*.md.hbs'], dest: 'dist/strings/' },
-          { src: ['src/templates/special/*.md.hbs'], dest: 'dist/special/'},
-          { src: ['src/templates/*.md.hbs'],         dest: 'dist/md/' }
-        ]
-      },
-      travis: {
         options: {
           travis: {
             name: 'Assemble',
             branch: 'wip'
           }
         },
-        files: {'dist/special/travis.md': ['./src/**/travis.md.hbs']}
-      },
-      travis2: {
-        options: {
-          travis: {
-            name: 'Upstage',
-            branch: 'master'
-          }
-        },
-        files: {'dist/special/travis2.md': ['./src/**/travis.md.hbs']}
-      },
-      relative: {
-        options: {
-          flatten: false,
-          assets: 'examples/assets'
-        },
-        files: {
-          'dist/html/relative/': [
-            './src/templates/path.hbs',
-            './src/templates/nested/**/*.hbs'
-          ]
-        }
-      },
-      less: {
-        files: {
-          'dist/html/less.html': [
-            './src/templates/less.hbs'
-          ]
-        }
-      },
-      handlebars: {
-        options: {
-          layout: 'src/templates/layouts/layout.hbs',
-          partials: 'src/content/test.hbs'
-        },
-        files: {
-          'dist/html/': [
-            'src/templates/*.hbs',
-            '!src/templates/*.md.hbs',
-            '!src/templates/sections.hbs'
-          ]
-        }
-      },
-      sections: {
-        options: {
-          layout: 'src/templates/layouts/layout.hbs'
-        },
-        files: {
-          'dist/sections/': [
-            'src/templates/sections.hbs'
-          ]
-        }
+        files: [
+          { src: ['src/templates/assemble/*.hbs'],       dest: 'dist/assemble/' },
+          { src: ['src/templates/collections/*.md.hbs'], dest: 'dist/collections/' },
+          { src: ['src/templates/converters/*.md.hbs'],  dest: 'dist/converters/' },
+          { src: ['src/templates/file/*.md.hbs'],        dest: 'dist/file/' },
+          { src: ['src/templates/html/*.md.hbs'],        dest: 'dist/html/'},
+          { src: ['src/templates/logging/*.md.hbs'],     dest: 'dist/logging/'},
+          { src: ['src/templates/objects/*.md.hbs'],     dest: 'dist/objects/'},
+          { src: ['src/templates/path/*.md.hbs'],        dest: 'dist/path/'},
+          { src: ['src/templates/special/*.md.hbs'],     dest: 'dist/special/'},
+          { src: ['src/templates/strings/*.md.hbs'],     dest: 'dist/strings/' }
+        ]
       }
     },
 
     // Before generating any new files, 
     // remove any previously-created files.
     clean: {
-      assemble: ['dist/**/*.{html,md}'],
+      all: ['dist/**/*.{html,md}'],
     }
   });
 
@@ -115,11 +67,6 @@ module.exports = function(grunt) {
   // Default task to be run.
   grunt.registerTask('default', [
     'clean',
-    'assemble:strings',
-    'assemble:travis',
-    'assemble:travis2',
-    'assemble:handlebars',
-    'assemble:sections',
-    'assemble:less'
+    'assemble:strings'
   ]);
 };
