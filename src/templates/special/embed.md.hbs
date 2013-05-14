@@ -14,13 +14,35 @@ lang:
 ---
 # {{ title }}
 
+
+## Glob files into one "embed"
+{{embed 'src/content/*.css'}}
+
+
+## Add extension automatically
+Extension automatically added when no value is given for second parameter.
+
 {{embed lang.none}}
-{{embed lang.css 'css'}}
-{{embed lang.hbs 'hbs'}}
-{{embed lang.html 'html'}}
+{{embed lang.css}}
+{{embed lang.hbs}}
+{{embed lang.html}}
+{{embed lang.js}}
+{{embed lang.json}}
+{{embed lang.less}}
+{{embed lang.md}} 
+{{embed lang.text}}
+{{embed lang.yml}}
+
+
+## Override default extension
+"Force" the extension to appear next to code "fences".
+
+{{embed lang.css 'less'}}
+{{embed lang.hbs 'zzz'}}
+{{embed lang.html 'bbb'}}
 {{embed lang.js 'javascript'}}
 {{embed lang.json 'json'}}
-{{embed lang.less 'less'}}
-{{embed lang.md 'md'}} {{! currently does not work on markdown. fences need to be escaped }}
+{{embed lang.less 'css'}}
+{{embed lang.md 'markdown'}} 
 {{embed lang.text 'txt'}}
-{{embed lang.yml 'yml'}}
+{{embed lang.yml 'yaml'}}

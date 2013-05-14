@@ -8,3 +8,5 @@ EngineLoader.getEngine(function(err, results) {
   }
   engine = options.engine = results;
 });
+
+Handlebars.registerHelper "copy", copy

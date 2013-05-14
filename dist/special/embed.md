@@ -124,6 +124,12 @@ Handlebars.registerHelper "copy", copy
 ```
 
 ``` less
+@line-height-base: 20px;
+@state-warning-text: #900;
+@state-warning-border: #900;
+@state-warning-background: #900;
+@border-radius-base: 5px;
+
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: @line-height-base;
@@ -268,6 +274,12 @@ Handlebars.registerHelper "copy", copy
 ```
 
 ``` css
+@line-height-base: 20px;
+@state-warning-text: #900;
+@state-warning-border: #900;
+@state-warning-background: #900;
+@border-radius-base: 5px;
+
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: @line-height-base;
