@@ -1,4 +1,7 @@
 Future:
-  eta: N/A
+  eta: 123
   goals:
-    - Test
+    - ABC
+    - DEF
+    - GHI
+    - KLM
