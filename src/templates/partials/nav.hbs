@@ -15,6 +15,11 @@
         <li{{#is title "Basic"}} class="active"{{/is}}>
           <a href="basic.html">Basic</a>
         </li>
+        <hr>
+        {{#pages}}<li>
+          <a href="{{lowercase basename}}{{ext}}">{{data.title}}</a>
+        </li>
+        {{/pages}}
       </ul>
       <ul class="nav pull-right">
         <li> <a href="https://github.com/assemble/helper-lib-examples">GitHub Repo </a> </li>

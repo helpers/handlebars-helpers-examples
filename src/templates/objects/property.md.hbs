@@ -1,16 +1,13 @@
 ---
-title: JSON Properties
+title: property helper
 pkg: package.json
 ---
 # {{title}}
 
 ## JSON
 
-#### `property`
+#### `prop`
 
-**Name**
-{{property '../../package.json' 'name'}}
-
-**Project Version**: v{{value pkg 'version'}}
-**Project Name**: {{{value pkg 'name'}}
-**Project Description**: {{value pkg 'description'}}
+**Project Version**:     {{prop pkg 'version'}}
+**Project Name**:        {{prop pkg 'name'}}
+**Project Description**: {{prop pkg 'description'}}

@@ -17,13 +17,13 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         flatten: true,
+        partials: 'src/templates/partials/*.hbs',
+        data: 'src/data/*.{json,yml}',
         assets: 'dist/assets'
       },
       pages: {
         options: {
           layout: 'src/templates/layouts/default.hbs',
-          partials: 'src/templates/partials/*.hbs',
-          data: 'src/data/*.{json,yml}'
         },
         src:  'src/templates/pages/*.hbs',
         dest: 'dist/'
@@ -48,20 +48,38 @@ module.exports = function(grunt) {
         ]
       },
       html: {
+        options: {
+          layout: 'src/templates/layouts/default.hbs'
+        },
         files: {
           // the exclusion patterns can be simpler, but explicit compiles much faster.
-          'dist/assemble/':        ['src/templates/assemble/*.hbs', '!src/templates/assemble/*.md.hbs'],
           'dist/converters/html/': ['src/templates/converters/*.hbs','!src/templates/converters/*.md.hbs'],
           'dist/file/html/':       ['src/templates/file/*.hbs','!src/templates/file/*.md.hbs'],
           'dist/html/':            ['src/templates/html/*.hbs', '!src/templates/html/*.md.hbs']
         }
+      },
+      // Assemble's built-in variables
+      variables_md: {
+        options: {ext: ''},
+        files: [
+          { src: ['src/templates/assemble/*.md.hbs'], dest: 'dist/assemble/' },
+        ]
+      },
+      // Assemble's built-in variables
+      variables_html: {
+        options: {
+          layout: 'src/templates/layouts/default.hbs'
+        },
+        files: [
+          { src: ['src/templates/assemble/*.hbs', '!src/templates/assemble/*.md.hbs'], dest: 'dist/assemble/html/' }
+        ]
       }
     },
 
     // Before generating any new files, 
     // remove any previously-created files.
     clean: {
-      all: ['dist/**', '!dist/assets'],
+      all: ['dist/**/*.{html,md}', '!dist/assets/**'],
     }
   });
 

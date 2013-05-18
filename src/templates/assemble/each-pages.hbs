@@ -1,9 +1,16 @@
-## `relative`
-One: {{relative currentPage assets}}
+<h1>Pages Collection and Relative Helper</h1>
+<p></p>
 
+One: 
+
+{{relative currentPage assets}}
 
 {{#each pages}}
-  {{relative ../currentPage.dest this.dest}}
+  {{relative ../currentPage.dest 'this.dest'}}
+{{/each}}
+
+{{#each pages}}
+  {{relative ../currentPage.dest 'dist/file/copy.md'}}
 {{/each}}
 
 {{#each pages}}

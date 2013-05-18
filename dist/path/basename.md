@@ -1,3 +1,0 @@
-
-## `basename` helper
-**Basename**: toc

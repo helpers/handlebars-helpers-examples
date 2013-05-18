@@ -1,6 +1,6 @@
 ---
 title: Value Helpers
-pkg: ../../package.json
+pkg: package.json
 ---
 # {{title}}
 
@@ -8,6 +8,8 @@ pkg: ../../package.json
 
 Get values from `package.json`
 
-**Project Version**: v{{value pkg 'version'}}
-**Project Name**: {{{value pkg 'name'}}
+**Project Version**:     v{{value pkg 'version'}}
+**Project Name**:        {{value pkg 'name'}}
 **Project Description**: {{value pkg 'description'}}
+**Project keywords**:    {{value pkg 'keywords'}}
+**Project devDependencies**:    {{value pkg 'devDependencies.grunt'}}

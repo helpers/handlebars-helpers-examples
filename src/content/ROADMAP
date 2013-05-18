@@ -1,7 +1,11 @@
-Future:
+v0.1.0:
   eta: 123
   goals:
     - ABC
     - DEF
     - GHI
     - KLM
+v0.1.1:
+  eta: 456
+  goals:
+    - ABC

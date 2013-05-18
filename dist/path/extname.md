@@ -1,3 +1,0 @@
-
-## `extname` helper
-**Extname**: md
