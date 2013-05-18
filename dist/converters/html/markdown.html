@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Markdown Helpers</title>
+    <link rel="stylesheet" href="../../assets/bootstrap.css">
+  </head>
+  <body>
+    <!-- nav partial -->
+    <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">helper-lib-examples</a>
+      <ul class="nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="partials.html">Partials</a>
+        </li>
+        <li>
+          <a href="markdown.html">Markdown</a>
+        </li>
+        <li>
+          <a href="basic.html">Basic</a>
+        </li>
+        <hr>
+        <li>
+          <a href="markdown.html">Markdown Helpers</a>
+        </li>
+        <li>
+          <a href="switch.html"></a>
+        </li>
+        <li>
+          <a href="sections.html">helper-lib example</a>
+        </li>
+        <li>
+          <a href="html.html">HTML Helpers</a>
+        </li>
+        <li>
+          <a href="icon.html">Icon Helper</a>
+        </li>
+        
+      </ul>
+      <ul class="nav pull-right">
+        <li> <a href="https://github.com/assemble/helper-lib-examples">GitHub Repo </a> </li>
+        <li> <a href="https://github.com/assemble/assemble/">Assemble</a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+      <!-- pages -->
+      
+<h1>Markdown Helpers: Includes and Blocks</h1>
+
+
+<h2>Markdown "Include": Escaped</h2>
+<h4>relative</h4>
+<p><em>Derive the relative path from one absolute path to another.</em></p>
+<p>Parameters: <code>string</code> (the value to test against)
+Default: <code>none</code></p>
+<p>Usage:</p>
+<pre><code class="lang-html">[]()</code></pre>
+<p>Example:</p>
+<pre><code class="lang-handlebars">&lt;a href=&quot;dist/assets/css/styles.css&quot;&gt;&lt;/a&gt;</code></pre>
+<p>Renders to: </p>
+<pre><code class="lang-html">&lt;a href=&quot;../../dist/assets/css/styles.css&quot;&gt;&lt;/a&gt;</code></pre>
+
+
+<h2>Markdown "Include": Un-escaped</h2>
+<h4>relative</h4>
+<p><em>Derive the relative path from one absolute path to another.</em></p>
+<p>Parameters: <code>string</code> (the value to test against)
+Default: <code>none</code></p>
+<p>Usage:</p>
+<pre><code class="lang-html">[]()</code></pre>
+<p>Example:</p>
+<pre><code class="lang-handlebars">&lt;a href=&quot;dist/assets/css/styles.css&quot;&gt;&lt;/a&gt;</code></pre>
+<p>Renders to: </p>
+<pre><code class="lang-html">&lt;a href=&quot;../../dist/assets/css/styles.css&quot;&gt;&lt;/a&gt;</code></pre>
+
+
+
+<h2>Markdown Block</h2>
+<h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+<h2>relative</h2>
+<p><em>Derive the relative path from one absolute path to another.</em></p>
+<p>Parameters: <code>string</code> (the value to test against)
+Default: <code>none</code></p>
+<p>Usage:</p>
+<pre><code class="lang-html">[]()</code></pre>
+<p>Example:</p>
+<pre><code class="lang-handlebars">&lt;a href=&quot;dist/assets/css/styles.css&quot;&gt;&lt;/a&gt;</code></pre>
+<p>Renders to: </p>
+<pre><code class="lang-html">&lt;a href=&quot;../../dist/assets/css/styles.css&quot;&gt;&lt;/a&gt;</code></pre>
+
+
+      <script src="../../assets/highlight.js"></script>
+    </div>
+  </body>
+</html>
