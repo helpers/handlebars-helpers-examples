@@ -17,8 +17,8 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         flatten: true,
-        partials: 'src/templates/partials/*.hbs',
         data: 'src/data/*.{json,yml}',
+        partials: 'src/templates/partials/*.hbs',
         assets: 'dist/assets'
       },
       pages: {
@@ -57,6 +57,20 @@ module.exports = function(grunt) {
           'dist/file/html/':       ['src/templates/file/*.hbs','!src/templates/file/*.md.hbs'],
           'dist/html/':            ['src/templates/html/*.hbs', '!src/templates/html/*.md.hbs']
         }
+      },
+
+      // This target shows just one way (of many) to render markdown
+      // files from templates. The {{inspect}} logging helper is used 
+      // heavily in these examples as well.  
+      inspect: {
+        options: {
+          ext: '',
+          partials: 'src/templates/partials/*.md.hbs',
+          layout: 'src/templates/layouts/default.md.hbs'
+        },
+        files: [
+          { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'dist/inspect/' }
+        ]
       },
       // Assemble's built-in variables
       variables_md: {
