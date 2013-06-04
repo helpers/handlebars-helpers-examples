@@ -1,0 +1,56 @@
+# {{#if title}}{{title}}{{else}}{{this.filename}} output{{/if}}
+
+This layout is used to demonstrate how paths will be constructed in 
+different contexts, and using different src-dest arrangements.
+
+{{> body }}
+
+
+---
+
+(begin path info...)
+
+### "\{{#each pages}}" Links
+
+#### relative path
+{{relative this.dest assets}}
+
+{{#each pages}}
+[{{this.basename}}]({{relative ../this.dest ../assets}}) {{/each}} {{! close tag is on this line to prevent a space from being inserted between each line in the output }}
+
+
+### \{{#each pages}} "this" context
+{{#each pages}}
+#### {{this.filename}}
+this.dirname:  {{this.dirname}}
+this.filename: {{this.filename}}
+this.pagename: {{this.pagename}}
+this.basename: {{this.basename}}
+this.extname:  {{this.extname}}
+this.ext:      {{this.ext}}
+{{/each}}
+
+
+### \{{#each pages}}
+{{#each pages}}
+#### {{../filename}}
+page.dirname:  {{../page.dirname}}
+page.filename: {{../page.filename}}
+page.pagename: {{../page.pagename}}
+page.basename: {{../page.basename}}
+page.extname:  {{../page.extname}}
+page.ext:      {{../page.ext}}
+{{/each}}
+
+
+### \{{#each pages}} "page" context
+{{#each pages}}
+#### {{../filename}}
+dirname:       {{../dirname}}
+filename:      {{../filename}}
+pagename:      {{../pagename}}
+basename:      {{../basename}}
+extname:       {{../extname}}
+ext:           {{../ext}}
+{{/each}}
+

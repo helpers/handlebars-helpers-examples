@@ -6,17 +6,17 @@ One:
 {{relative currentPage assets}}
 
 {{#each pages}}
-  {{relative ../currentPage.dest 'this.dest'}}
+  {{relative ../page.dest 'this.dest'}}
 {{/each}}
 
 {{#each pages}}
-  {{relative ../currentPage.dest 'dist/file/copy.md'}}
+  {{relative ../page.dest 'dist/file/copy.md'}}
 {{/each}}
 
 {{#each pages}}
-  {{relative ../currentPage.dest 'dist/assets'}}
+  {{relative ../page.dest 'dist/assets'}}
 {{/each}}
 
 {{#each pages}}
-  {{relative ../currentPage.dest 'src/content'}}
+  {{relative ../page.dest 'src/content'}}
 {{/each}}

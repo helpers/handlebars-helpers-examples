@@ -11,21 +11,21 @@ Relative helper outside of the "each pages" block.
 
 ``` html
 {{#each pages}}
-From **../currentPage.dest**, to: **this.dest**: {{relative ../currentPage.dest this.dest}}
+From **../page.dest**, to: **this.dest**: {{relative ../page.dest this.dest}}
 {{/each}}
 ```
 ``` html
 {{#each pages}}
-From **../currentPage.dest**, to: **assets**: {{relative ../currentPage.dest assets}}
+From **../page.dest**, to: **assets**: {{relative ../page.dest assets}}
 {{/each}}
 ```
 ``` html
 {{#each pages}}
-From **../currentPage.dest**, to: **"dist/assets"**: {{relative ../currentPage.dest 'dist/assets'}}
+From **../page.dest**, to: **"dist/assets"**: {{relative ../page.dest 'dist/assets'}}
 {{/each}}
 ```
 ``` html
 {{#each pages}}
-From **../currentPage.dest**, to: **"src/content"**: {{relative ../currentPage.dest 'src/content'}}
+From **../page.dest**, to: **"src/content"**: {{relative ../page.dest 'src/content'}}
 {{/each}}
 ```

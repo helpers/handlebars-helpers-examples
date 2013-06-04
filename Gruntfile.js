@@ -28,9 +28,11 @@ module.exports = function(grunt) {
         src:  'src/templates/pages/*.hbs',
         dest: 'dist/'
       },
-      strings: {
+
+      helpers: {
         options: {
           ext: '',
+          // Example custom variables, for the {{travis}} helper
           travis: {
             name: 'Assemble',
             branch: 'wip'
@@ -39,12 +41,13 @@ module.exports = function(grunt) {
         files: [
           { src: ['src/templates/collections/*.md.hbs'], dest: 'dist/collections/' },
           { src: ['src/templates/converters/*.md.hbs'],  dest: 'dist/converters/' },
-          { src: ['src/templates/file/*.md.hbs'],        dest: 'dist/file/' },
+          { src: ['src/templates/content/*.md.hbs'],     dest: 'dist/content/' },
           { src: ['src/templates/logging/*.md.hbs'],     dest: 'dist/logging/'},
           { src: ['src/templates/objects/*.md.hbs'],     dest: 'dist/objects/'},
           { src: ['src/templates/path/*.md.hbs'],        dest: 'dist/path/'},
           { src: ['src/templates/special/*.md.hbs'],     dest: 'dist/special/'},
-          { src: ['src/templates/strings/*.md.hbs'],     dest: 'dist/strings/' }
+          { src: ['src/templates/strings/*.md.hbs'],     dest: 'dist/strings/' },
+          { src: ['src/templates/url/*.md.hbs'],         dest: 'dist/url/' }
         ]
       },
       html: {
@@ -52,16 +55,15 @@ module.exports = function(grunt) {
           layout: 'src/templates/layouts/default.hbs'
         },
         files: {
-          // the exclusion patterns can be simpler, but explicit compiles much faster.
           'dist/converters/html/': ['src/templates/converters/*.hbs','!src/templates/converters/*.md.hbs'],
-          'dist/file/html/':       ['src/templates/file/*.hbs','!src/templates/file/*.md.hbs'],
+          'dist/content/html/':    ['src/templates/content/*.hbs','!src/templates/content/*.md.hbs'],
           'dist/html/':            ['src/templates/html/*.hbs', '!src/templates/html/*.md.hbs']
         }
       },
 
       // This target shows just one way (of many) to render markdown
       // files from templates. The {{inspect}} logging helper is used 
-      // heavily in these examples as well.  
+      // in these examples as well.  
       inspect: {
         options: {
           ext: '',
@@ -72,14 +74,29 @@ module.exports = function(grunt) {
           { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'dist/inspect/' }
         ]
       },
-      // Assemble's built-in variables
-      variables_md: {
+
+      // This target This layout is used to demonstrate how paths 
+      // will be constructed in different contexts, and using different 
+      // src-dest arrangements.
+      paths: {
+        options: {
+          ext: '',
+          partials: 'src/templates/partials/*.md.hbs',
+          layout: 'src/templates/layouts/paths.md.hbs'
+        },
+        files: [
+          { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'dist/paths/' }
+        ]
+      },
+
+      // Assemble's pre-defined variables, rendered to markdown
+      predefined_variables: {
         options: {ext: ''},
         files: [
           { src: ['src/templates/assemble/*.md.hbs'], dest: 'dist/assemble/' },
         ]
       },
-      // Assemble's built-in variables
+      // Assemble's pre-defined variables, rendered to HTML
       variables_html: {
         options: {
           layout: 'src/templates/layouts/default.hbs'

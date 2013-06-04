@@ -8,12 +8,12 @@ to: ./dist/md/changelog.md
 ## `\{{relative}}` helper
 
 **01**: `{{relative from to}}`
-**04**: `{{relative "." assets}}`
-**05**: `{{relative 'src/content' assets}}`
-**06**: `{{relative currentPage.dest assets}}`
-**07**: `{{relative currentPage.dest currentPage.src}}`
 **02**: `{{relative 'C:\\orandea\\test\\aaa' 'C:\\orandea\\impl\\bbb'}}`
 **03**: `{{relative "src/content/lib/text.md" "src/content/toc.md"}}`
+**04**: `{{relative "." assets}}`
+**05**: `{{relative 'src/content' assets}}`
+**06**: `{{relative page.dest assets}}`
+**07**: `{{relative page.dest page.src}}`
 **08**: `{{relative "src/content/toc.md" "js-yaml"}}`
 **09**: `{{relative "./" "js-yaml/bin"}}`
 **10**: `{{relative "src/content/toc.md" "js-yaml"}}`

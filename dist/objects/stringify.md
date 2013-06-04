@@ -27,14 +27,17 @@
     "test": "grunt assemble"
   },
   "devDependencies": {
-    "assemble": ">= 0.3.76",
-    "helper-lib": ">= 0.2.3",
+    "assemble": ">= 0.3.80",
     "grunt-contrib-clean": "~0.4.0",
     "grunt": "~0.4.1"
   },
   "keywords": [
-    "gruntplugin",
+    "assemble",
     "helpers",
+    "helper",
+    "helper-lib",
+    "filters",
+    "handlebars helper",
     "handlebars helpers",
     "handlebars",
     "templates"
