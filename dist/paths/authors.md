@@ -50,7 +50,6 @@ As with JavaScript, helper names are case sensitive. So we take advantage of tha
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -189,14 +188,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -596,25 +587,9 @@ page.basename: authors
 page.extname:  
 page.ext:      
 
-#### authors.md
-page.dirname:  dist/paths
-page.filename: authors.md
-page.pagename: authors.md
-page.basename: authors
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### authors.md
-dirname:       dist/paths
-filename:      authors.md
-pagename:      authors.md
-basename:      authors
-extname:       
-ext:           
 
 #### authors.md
 dirname:       dist/paths

@@ -43,8 +43,6 @@ From **../page.dest**, to: **this.dest**: less.md
 
 From **../page.dest**, to: **this.dest**: switch.md
 
-From **../page.dest**, to: **this.dest**: hightlight.md
-
 From **../page.dest**, to: **this.dest**: expand.md
 
 From **../page.dest**, to: **this.dest**: inspect.md
@@ -146,8 +144,6 @@ From **../page.dest**, to: **assets**: ../../../assets
 
 From **../page.dest**, to: **assets**: ../../../assets
 
-From **../page.dest**, to: **assets**: ../../../assets
-
 ```
 ``` html
 
@@ -215,12 +211,8 @@ From **../page.dest**, to: **"dist/assets"**: ../assets
 
 From **../page.dest**, to: **"dist/assets"**: ../assets
 
-From **../page.dest**, to: **"dist/assets"**: ../assets
-
 ```
 ``` html
-
-From **../page.dest**, to: **"src/content"**: ../../src/content
 
 From **../page.dest**, to: **"src/content"**: ../../src/content
 

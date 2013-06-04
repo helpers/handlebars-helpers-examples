@@ -964,7 +964,6 @@ Renders to:
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -1103,14 +1102,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -1510,25 +1501,9 @@ page.basename: glob-sortby-path
 page.extname:  
 page.ext:      
 
-#### glob-sortby-path.md
-page.dirname:  dist/paths
-page.filename: glob-sortby-path.md
-page.pagename: glob-sortby-path.md
-page.basename: glob-sortby-path
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### glob-sortby-path.md
-dirname:       dist/paths
-filename:      glob-sortby-path.md
-pagename:      glob-sortby-path.md
-basename:      glob-sortby-path
-extname:       
-ext:           
 
 #### glob-sortby-path.md
 dirname:       dist/paths

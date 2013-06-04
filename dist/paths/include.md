@@ -39,7 +39,6 @@ Include: Partial **nothing** not found.
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -178,14 +177,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -585,25 +576,9 @@ page.basename: include
 page.extname:  
 page.ext:      
 
-#### include.md
-page.dirname:  dist/paths
-page.filename: include.md
-page.pagename: include.md
-page.basename: include
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### include.md
-dirname:       dist/paths
-filename:      include.md
-pagename:      include.md
-basename:      include
-extname:       
-ext:           
 
 #### include.md
 dirname:       dist/paths

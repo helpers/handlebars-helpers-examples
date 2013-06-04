@@ -39,7 +39,6 @@ Easily embed a jsfiddle in a page with: `{{ jsfiddle [id] }}`
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -178,14 +177,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -585,25 +576,9 @@ page.basename: jsfiddle
 page.extname:  
 page.ext:      
 
-#### jsfiddle.md
-page.dirname:  dist/paths
-page.filename: jsfiddle.md
-page.pagename: jsfiddle.md
-page.basename: jsfiddle
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### jsfiddle.md
-dirname:       dist/paths
-filename:      jsfiddle.md
-pagename:      jsfiddle.md
-basename:      jsfiddle
-extname:       
-ext:           
 
 #### jsfiddle.md
 dirname:       dist/paths

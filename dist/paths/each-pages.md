@@ -46,8 +46,6 @@ From **../page.dest**, to: **this.dest**: less.md
 
 From **../page.dest**, to: **this.dest**: switch.md
 
-From **../page.dest**, to: **this.dest**: hightlight.md
-
 From **../page.dest**, to: **this.dest**: expand.md
 
 From **../page.dest**, to: **this.dest**: inspect.md
@@ -149,8 +147,6 @@ From **../page.dest**, to: **assets**: ../../../assets
 
 From **../page.dest**, to: **assets**: ../../../assets
 
-From **../page.dest**, to: **assets**: ../../../assets
-
 ```
 ``` html
 
@@ -218,12 +214,8 @@ From **../page.dest**, to: **"dist/assets"**: ../assets
 
 From **../page.dest**, to: **"dist/assets"**: ../assets
 
-From **../page.dest**, to: **"dist/assets"**: ../assets
-
 ```
 ``` html
-
-From **../page.dest**, to: **"src/content"**: ../../src/content
 
 From **../page.dest**, to: **"src/content"**: ../../src/content
 
@@ -318,7 +310,6 @@ From **../page.dest**, to: **"src/content"**: ../../src/content
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -457,14 +448,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -864,25 +847,9 @@ page.basename: each-pages
 page.extname:  
 page.ext:      
 
-#### each-pages.md
-page.dirname:  dist/paths
-page.filename: each-pages.md
-page.pagename: each-pages.md
-page.basename: each-pages
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### each-pages.md
-dirname:       dist/paths
-filename:      each-pages.md
-pagename:      each-pages.md
-basename:      each-pages
-extname:       
-ext:           
 
 #### each-pages.md
 dirname:       dist/paths

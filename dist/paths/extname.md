@@ -34,7 +34,6 @@ different contexts, and using different src-dest arrangements.
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -173,14 +172,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -580,25 +571,9 @@ page.basename: extname
 page.extname:  
 page.ext:      
 
-#### extname.md
-page.dirname:  dist/paths
-page.filename: extname.md
-page.pagename: extname.md
-page.basename: extname
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### extname.md
-dirname:       dist/paths
-filename:      extname.md
-pagename:      extname.md
-basename:      extname
-extname:       
-ext:           
 
 #### extname.md
 dirname:       dist/paths

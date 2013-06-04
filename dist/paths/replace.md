@@ -48,7 +48,6 @@ replace a for b
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -187,14 +186,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -594,25 +585,9 @@ page.basename: replace
 page.extname:  
 page.ext:      
 
-#### replace.md
-page.dirname:  dist/paths
-page.filename: replace.md
-page.pagename: replace.md
-page.basename: replace
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### replace.md
-dirname:       dist/paths
-filename:      replace.md
-pagename:      replace.md
-basename:      replace
-extname:       
-ext:           
 
 #### replace.md
 dirname:       dist/paths

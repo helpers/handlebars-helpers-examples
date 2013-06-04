@@ -236,7 +236,6 @@ With a reference later in the document defining the URL location:
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -375,14 +374,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -782,25 +773,9 @@ page.basename: glob-extensions
 page.extname:  
 page.ext:      
 
-#### glob-extensions.md
-page.dirname:  dist/paths
-page.filename: glob-extensions.md
-page.pagename: glob-extensions.md
-page.basename: glob-extensions
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### glob-extensions.md
-dirname:       dist/paths
-filename:      glob-extensions.md
-pagename:      glob-extensions.md
-basename:      glob-extensions
-extname:       
-ext:           
 
 #### glob-extensions.md
 dirname:       dist/paths

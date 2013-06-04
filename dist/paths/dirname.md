@@ -45,7 +45,6 @@ Seven: src/content
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -184,14 +183,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -591,25 +582,9 @@ page.basename: dirname
 page.extname:  
 page.ext:      
 
-#### dirname.md
-page.dirname:  dist/paths
-page.filename: dirname.md
-page.pagename: dirname.md
-page.basename: dirname
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### dirname.md
-dirname:       dist/paths
-filename:      dirname.md
-pagename:      dirname.md
-basename:      dirname
-extname:       
-ext:           
 
 #### dirname.md
 dirname:       dist/paths

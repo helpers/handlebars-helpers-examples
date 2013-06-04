@@ -35,7 +35,6 @@ Copy from "A to B": **true**
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -174,14 +173,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -581,25 +572,9 @@ page.basename: copy
 page.extname:  
 page.ext:      
 
-#### copy.md
-page.dirname:  dist/paths
-page.filename: copy.md
-page.pagename: copy.md
-page.basename: copy
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### copy.md
-dirname:       dist/paths
-filename:      copy.md
-pagename:      copy.md
-basename:      copy
-extname:       
-ext:           
 
 #### copy.md
 dirname:       dist/paths

@@ -43,7 +43,6 @@ Get values from `package.json`
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -182,14 +181,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -589,25 +580,9 @@ page.basename: value
 page.extname:  
 page.ext:      
 
-#### value.md
-page.dirname:  dist/paths
-page.filename: value.md
-page.pagename: value.md
-page.basename: value
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### value.md
-dirname:       dist/paths
-filename:      value.md
-pagename:      value.md
-basename:      value
-extname:       
-ext:           
 
 #### value.md
 dirname:       dist/paths

@@ -39,7 +39,6 @@ make-this-all-dashified
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -178,14 +177,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -585,25 +576,9 @@ page.basename: hyphenate
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
-page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### hyphenate.md
-dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
-extname:       
-ext:           
 
 #### hyphenate.md
 dirname:       dist/paths

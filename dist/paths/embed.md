@@ -398,7 +398,6 @@ description: different file formats for testing helpers
 [include](../assets) 
 [less](../assets) 
 [switch](../assets) 
-[hightlight](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
 [property](../assets) 
@@ -537,14 +536,6 @@ this.dirname:  dist/paths
 this.filename: switch.md
 this.pagename: switch.md
 this.basename: switch
-this.extname:  
-this.ext:      
-
-#### hightlight.md
-this.dirname:  dist/paths
-this.filename: hightlight.md
-this.pagename: hightlight.md
-this.basename: hightlight
 this.extname:  
 this.ext:      
 
@@ -944,25 +935,9 @@ page.basename: embed
 page.extname:  
 page.ext:      
 
-#### embed.md
-page.dirname:  dist/paths
-page.filename: embed.md
-page.pagename: embed.md
-page.basename: embed
-page.extname:  
-page.ext:      
-
 
 
 ### {{#each pages}} "page" context
-
-#### embed.md
-dirname:       dist/paths
-filename:      embed.md
-pagename:      embed.md
-basename:      embed
-extname:       
-ext:           
 
 #### embed.md
 dirname:       dist/paths
