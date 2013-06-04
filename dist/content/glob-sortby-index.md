@@ -1,6 +1,8 @@
 # GLOB
 
-## Sort by content 
+The "sorting" examples are placeholders for a second parameter that is a wip. 
+
+## Sort by index 
 ## Blockquotes
 
 Nunc vestibulum leo a lorem pulvinar ut convallis odio iaculis. Sed a sapien nec libero semper scelerisque at eget nisl. Vestibulum urna ligula, facilisis sed blandit nec, placerat eget augue. Nulla ultrices hendrerit mauris, quis hendrerit mi bibendum eget. Etiam quam justo, sollicitudin in tempus ac, tristique eget elit. Vivamus fermentum libero id magna mollis eleifend. Integer blandit libero in est hendrerit sollicitudin. Pellentesque ac orci id magna ullamcorper laoreet ut vitae nisl. 

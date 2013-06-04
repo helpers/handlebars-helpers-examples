@@ -4,5 +4,5 @@
 
 Include: <a class="btn btn-primary btn-large" href="https://github.com/assemble/assemble/"> Visit Assemble </a>
 
-Include: Include **nothing** not found.
+Include: Partial **nothing** not found.
 

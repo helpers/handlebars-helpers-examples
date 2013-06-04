@@ -1,5 +1,6 @@
 # README
 
+The "sorting" examples are placeholders for a second parameter that is a wip. 
 
 ## Multiple Extensions
 # One
