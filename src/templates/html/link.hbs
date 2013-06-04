@@ -1,0 +1,15 @@
+---
+title: Link Helper
+description: >
+  The link helper does more than just render into an href, 
+  it also renders to either markdown or html syntax based 
+  on the dest extension defined for the output in the Assemble 
+  task.
+---
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+
+
+{{link 'http://github.com/assemble/assemble' 'Visit Assemble'}}
+{{link 'http://github.com/assemble/helper-lib' 'Get Helpers'}}
+{{link 'http://github.com/assemble/assemble' 'Visit Assemble' 'btn btn-info active'}}

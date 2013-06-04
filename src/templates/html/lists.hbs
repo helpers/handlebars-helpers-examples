@@ -1,0 +1,41 @@
+---
+title: List Helpers
+description: Create unordered or ordered lists.
+
+items: 
+  - one
+  - two
+  - three
+
+moreitems:
+  - url: one
+    text: two  
+  - url: three
+    text: four  
+  - url: five
+    text: size
+---
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+
+
+<h2>Unordered Lists</h2>
+{{#ul items class="nav nav-pills"}}
+  {{.}}
+{{/ul}}
+
+
+{{#ul moreitems class="nav nav-tabs"}}
+  <a href="{{url}}">{{text}}</a> 
+{{/ul}}
+
+
+
+<h2>Ordered Lists</h2>
+{{#ol items class="nav nav-list"}}
+  {{.}}
+{{/ol}}
+
+{{#ol moreitems class="nav"}}
+  <a href="{{url}}">{{text}}</a> 
+{{/ol}}
