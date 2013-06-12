@@ -19,14 +19,14 @@ module.exports = function(grunt) {
         flatten: true,
         data: 'src/data/*.{json,yml}',
         partials: 'src/templates/partials/*.hbs',
-        assets: 'dist/assets'
+        assets: 'output/assets'
       },
       pages: {
         options: {
           layout: 'src/templates/layouts/default-layout.hbs',
         },
         src:  'src/templates/pages/*.hbs',
-        dest: 'dist/'
+        dest: 'output/'
       },
 
       helpers: {
@@ -39,15 +39,15 @@ module.exports = function(grunt) {
           }
         },
         files: [
-          { src: ['src/templates/collections/*.md.hbs'], dest: 'dist/collections/' },
-          { src: ['src/templates/converters/*.md.hbs'],  dest: 'dist/converters/' },
-          { src: ['src/templates/content/*.md.hbs'],     dest: 'dist/content/' },
-          { src: ['src/templates/logging/*.md.hbs'],     dest: 'dist/logging/'},
-          { src: ['src/templates/objects/*.md.hbs'],     dest: 'dist/objects/'},
-          { src: ['src/templates/path/*.md.hbs'],        dest: 'dist/path/'},
-          { src: ['src/templates/special/*.md.hbs'],     dest: 'dist/special/'},
-          { src: ['src/templates/strings/*.md.hbs'],     dest: 'dist/strings/' },
-          { src: ['src/templates/url/*.md.hbs'],         dest: 'dist/url/' }
+          { src: ['src/templates/collections/*.md.hbs'], dest: 'output/collections/' },
+          { src: ['src/templates/converters/*.md.hbs'],  dest: 'output/converters/' },
+          { src: ['src/templates/content/*.md.hbs'],     dest: 'output/content/' },
+          { src: ['src/templates/logging/*.md.hbs'],     dest: 'output/logging/'},
+          { src: ['src/templates/objects/*.md.hbs'],     dest: 'output/objects/'},
+          { src: ['src/templates/path/*.md.hbs'],        dest: 'output/path/'},
+          { src: ['src/templates/special/*.md.hbs'],     dest: 'output/special/'},
+          { src: ['src/templates/strings/*.md.hbs'],     dest: 'output/strings/' },
+          { src: ['src/templates/url/*.md.hbs'],         dest: 'output/url/' }
         ]
       },
       html: {
@@ -55,9 +55,9 @@ module.exports = function(grunt) {
           layout: 'src/templates/layouts/default-layout.hbs'
         },
         files: {
-          'dist/converters/html/': ['src/templates/converters/*.hbs','!src/templates/converters/*.md.hbs'],
-          'dist/content/html/':    ['src/templates/content/*.hbs','!src/templates/content/*.md.hbs'],
-          'dist/html/':            ['src/templates/html/*.hbs', '!src/templates/html/*.md.hbs']
+          'output/converters/html/': ['src/templates/converters/*.hbs','!src/templates/converters/*.md.hbs'],
+          'output/content/html/':    ['src/templates/content/*.hbs','!src/templates/content/*.md.hbs'],
+          'output/html/':            ['src/templates/html/*.hbs', '!src/templates/html/*.md.hbs']
         }
       },
       // This target shows just one way (of many) to render markdown
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
           layout: 'src/templates/layouts/markdown-layout.md.hbs'
         },
         files: [
-          { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'dist/inspect/' }
+          { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'output/inspect/' }
         ]
       },
 
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
           layout: 'src/templates/layouts/paths.md.hbs'
         },
         files: [
-          { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'dist/paths/' }
+          { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'output/paths/' }
         ]
       },
 
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
       predefined_variables: {
         options: {ext: ''},
         files: [
-          { src: ['src/templates/assemble/*.md.hbs'], dest: 'dist/assemble/' },
+          { src: ['src/templates/assemble/*.md.hbs'], dest: 'output/assemble/' },
         ]
       },
       // Assemble's pre-defined variables, rendered to HTML
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
           layout: 'src/templates/layouts/default-layout.hbs'
         },
         files: [
-          { src: ['src/templates/assemble/*.hbs', '!src/templates/assemble/*.md.hbs'], dest: 'dist/assemble/html/' }
+          { src: ['src/templates/assemble/*.hbs', '!src/templates/assemble/*.md.hbs'], dest: 'output/assemble/html/' }
         ]
       }
     },
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
     // Before generating any new files, 
     // remove any previously-created files.
     clean: {
-      all: ['dist/**/*.{html,md}', '!dist/assets/**'],
+      all: ['output/**/*.{html,md}', '!output/assets/**'],
     }
   });
 
