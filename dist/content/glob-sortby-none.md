@@ -1,6 +1,7 @@
-# GLOB
 
-The "sorting" examples are placeholders for a second parameter that is a wip. 
+
+# Globbing helper
+The "sorting" examples are placeholders for a second parameter that is on the way.
 
 ## Sort by nothing 
 ### Links

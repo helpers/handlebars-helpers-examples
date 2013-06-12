@@ -35,6 +35,7 @@ replace a for b
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -82,6 +83,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -585,9 +594,25 @@ page.basename: replace
 page.extname:  
 page.ext:      
 
+#### replace.md
+page.dirname:  dist/paths
+page.filename: replace.md
+page.pagename: replace.md
+page.basename: replace
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### replace.md
+dirname:       dist/paths
+filename:      replace.md
+pagename:      replace.md
+basename:      replace
+extname:       
+ext:           
 
 #### replace.md
 dirname:       dist/paths

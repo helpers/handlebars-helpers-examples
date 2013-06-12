@@ -26,6 +26,7 @@ Include: Partial **nothing** not found.
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -73,6 +74,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -576,9 +585,25 @@ page.basename: include
 page.extname:  
 page.ext:      
 
+#### include.md
+page.dirname:  dist/paths
+page.filename: include.md
+page.pagename: include.md
+page.basename: include
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### include.md
+dirname:       dist/paths
+filename:      include.md
+pagename:      include.md
+basename:      include
+extname:       
+ext:           
 
 #### include.md
 dirname:       dist/paths

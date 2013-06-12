@@ -1,17 +1,14 @@
-# hyphenate.md output
+# Opt helper
 
 This layout is used to demonstrate how paths will be constructed in 
 different contexts, and using different src-dest arrangements.
 
 
+# Opt helper
 
-## Hyphenate
-make-this-all-hyphenated
-
-## Dashify
-make-this-all-dashified
-
-
+Assets: "../assets"
+Layout: ""
+Ext: ""
 
 
 ---
@@ -329,267 +326,267 @@ this.ext:
 
 ### {{#each pages}}
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
-#### hyphenate.md
+#### opt.md
 page.dirname:  dist/paths
-page.filename: hyphenate.md
-page.pagename: hyphenate.md
-page.basename: hyphenate
+page.filename: opt.md
+page.pagename: opt.md
+page.basename: opt
 page.extname:  
 page.ext:      
 
@@ -597,267 +594,267 @@ page.ext:
 
 ### {{#each pages}} "page" context
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 
-#### hyphenate.md
+#### opt.md
 dirname:       dist/paths
-filename:      hyphenate.md
-pagename:      hyphenate.md
-basename:      hyphenate
+filename:      opt.md
+pagename:      opt.md
+basename:      opt
 extname:       
 ext:           
 

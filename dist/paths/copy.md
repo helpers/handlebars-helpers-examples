@@ -22,6 +22,7 @@ Copy from "A to B": **true**
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -69,6 +70,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -572,9 +581,25 @@ page.basename: copy
 page.extname:  
 page.ext:      
 
+#### copy.md
+page.dirname:  dist/paths
+page.filename: copy.md
+page.pagename: copy.md
+page.basename: copy
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### copy.md
+dirname:       dist/paths
+filename:      copy.md
+pagename:      copy.md
+basename:      copy
+extname:       
+ext:           
 
 #### copy.md
 dirname:       dist/paths

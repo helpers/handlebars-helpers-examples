@@ -37,6 +37,7 @@ As with JavaScript, helper names are case sensitive. So we take advantage of tha
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -84,6 +85,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -587,9 +596,25 @@ page.basename: authors
 page.extname:  
 page.ext:      
 
+#### authors.md
+page.dirname:  dist/paths
+page.filename: authors.md
+page.pagename: authors.md
+page.basename: authors
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### authors.md
+dirname:       dist/paths
+filename:      authors.md
+pagename:      authors.md
+basename:      authors
+extname:       
+ext:           
 
 #### authors.md
 dirname:       dist/paths

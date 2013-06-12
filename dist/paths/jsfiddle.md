@@ -26,6 +26,7 @@ Easily embed a jsfiddle in a page with: `{{ jsfiddle [id] }}`
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -73,6 +74,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -576,9 +585,25 @@ page.basename: jsfiddle
 page.extname:  
 page.ext:      
 
+#### jsfiddle.md
+page.dirname:  dist/paths
+page.filename: jsfiddle.md
+page.pagename: jsfiddle.md
+page.basename: jsfiddle
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### jsfiddle.md
+dirname:       dist/paths
+filename:      jsfiddle.md
+pagename:      jsfiddle.md
+basename:      jsfiddle
+extname:       
+ext:           
 
 #### jsfiddle.md
 dirname:       dist/paths

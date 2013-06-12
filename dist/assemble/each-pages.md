@@ -15,6 +15,8 @@ From **../page.dest**, to: **this.dest**: authors.md
 
 From **../page.dest**, to: **this.dest**: each-pages.md
 
+From **../page.dest**, to: **this.dest**: opt.md
+
 From **../page.dest**, to: **this.dest**: roadmap.md
 
 From **../page.dest**, to: **this.dest**: travis.md
@@ -30,19 +32,25 @@ From **../page.dest**, to: **assets**: ../../../assets
 
 From **../page.dest**, to: **assets**: ../../../assets
 
-```
-``` html
-
-From **../page.dest**, to: **"dist/assets"**: ../assets
-
-From **../page.dest**, to: **"dist/assets"**: ../assets
-
-From **../page.dest**, to: **"dist/assets"**: ../assets
-
-From **../page.dest**, to: **"dist/assets"**: ../assets
+From **../page.dest**, to: **assets**: ../../../assets
 
 ```
 ``` html
+
+From **../page.dest**, to: **"dist/assets"**: ../assets
+
+From **../page.dest**, to: **"dist/assets"**: ../assets
+
+From **../page.dest**, to: **"dist/assets"**: ../assets
+
+From **../page.dest**, to: **"dist/assets"**: ../assets
+
+From **../page.dest**, to: **"dist/assets"**: ../assets
+
+```
+``` html
+
+From **../page.dest**, to: **"src/content"**: ../../src/content
 
 From **../page.dest**, to: **"src/content"**: ../../src/content
 

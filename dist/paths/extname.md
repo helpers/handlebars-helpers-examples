@@ -21,6 +21,7 @@ different contexts, and using different src-dest arrangements.
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -68,6 +69,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -571,9 +580,25 @@ page.basename: extname
 page.extname:  
 page.ext:      
 
+#### extname.md
+page.dirname:  dist/paths
+page.filename: extname.md
+page.pagename: extname.md
+page.basename: extname
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### extname.md
+dirname:       dist/paths
+filename:      extname.md
+pagename:      extname.md
+basename:      extname
+extname:       
+ext:           
 
 #### extname.md
 dirname:       dist/paths

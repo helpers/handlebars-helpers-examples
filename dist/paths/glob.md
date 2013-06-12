@@ -1,9 +1,11 @@
-# glob.md output
+# Globbing helper
 
 This layout is used to demonstrate how paths will be constructed in 
 different contexts, and using different src-dest arrangements.
 
-# README
+
+
+# Globbing helper
 
 
 ## Single file explicit
@@ -43,6 +45,7 @@ Renders to:
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -90,6 +93,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -593,9 +604,25 @@ page.basename: glob
 page.extname:  
 page.ext:      
 
+#### glob.md
+page.dirname:  dist/paths
+page.filename: glob.md
+page.pagename: glob.md
+page.basename: glob
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### glob.md
+dirname:       dist/paths
+filename:      glob.md
+pagename:      glob.md
+basename:      glob
+extname:       
+ext:           
 
 #### glob.md
 dirname:       dist/paths

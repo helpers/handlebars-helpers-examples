@@ -1,11 +1,13 @@
-# glob-extensions.md output
+# Globbing helper
 
 This layout is used to demonstrate how paths will be constructed in 
 different contexts, and using different src-dest arrangements.
 
-# README
 
-The "sorting" examples are placeholders for a second parameter that is a wip. 
+
+# Globbing helper
+The "sorting" examples are placeholders for a second parameter that is on the way.
+
 
 ## Multiple Extensions
 # One
@@ -223,6 +225,7 @@ With a reference later in the document defining the URL location:
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -270,6 +273,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -773,9 +784,25 @@ page.basename: glob-extensions
 page.extname:  
 page.ext:      
 
+#### glob-extensions.md
+page.dirname:  dist/paths
+page.filename: glob-extensions.md
+page.pagename: glob-extensions.md
+page.basename: glob-extensions
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### glob-extensions.md
+dirname:       dist/paths
+filename:      glob-extensions.md
+pagename:      glob-extensions.md
+basename:      glob-extensions
+extname:       
+ext:           
 
 #### glob-extensions.md
 dirname:       dist/paths

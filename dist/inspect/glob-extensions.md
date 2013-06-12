@@ -1,8 +1,10 @@
-# glob-extensions.md output
+# Globbing helper
 
-# README
 
-The "sorting" examples are placeholders for a second parameter that is a wip. 
+
+# Globbing helper
+The "sorting" examples are placeholders for a second parameter that is on the way.
+
 
 ## Multiple Extensions
 # One
@@ -210,7 +212,9 @@ With a reference later in the document defining the URL location:
 ## Debug Info
 
 ``` json
-{ dirname: 'dist/inspect',
+{ title: 'Globbing helper',
+  description: 'The "sorting" examples are placeholders for a second parameter that is on the way.',
+  dirname: 'dist/inspect',
   filename: 'glob-extensions.md',
   pageName: 'glob-extensions.md',
   pagename: 'glob-extensions.md',
@@ -227,6 +231,8 @@ With a reference later in the document defining the URL location:
      [arguments]: null,
      [caller]: null,
      [prototype]: { [constructor]: [Circular] } },
-  data: {} }
+  data: 
+   { title: 'Globbing helper',
+     description: 'The "sorting" examples are placeholders for a second parameter that is on the way.' } }
 ```
 

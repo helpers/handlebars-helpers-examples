@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          layout: 'src/templates/layouts/default.hbs',
+          layout: 'src/templates/layouts/default-layout.hbs',
         },
         src:  'src/templates/pages/*.hbs',
         dest: 'dist/'
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
       },
       html: {
         options: {
-          layout: 'src/templates/layouts/default.hbs'
+          layout: 'src/templates/layouts/default-layout.hbs'
         },
         files: {
           'dist/converters/html/': ['src/templates/converters/*.hbs','!src/templates/converters/*.md.hbs'],
@@ -60,7 +60,6 @@ module.exports = function(grunt) {
           'dist/html/':            ['src/templates/html/*.hbs', '!src/templates/html/*.md.hbs']
         }
       },
-
       // This target shows just one way (of many) to render markdown
       // files from templates. The {{inspect}} logging helper is used 
       // in these examples as well.  
@@ -68,7 +67,7 @@ module.exports = function(grunt) {
         options: {
           ext: '',
           partials: 'src/templates/partials/*.md.hbs',
-          layout: 'src/templates/layouts/default.md.hbs'
+          layout: 'src/templates/layouts/markdown-layout.md.hbs'
         },
         files: [
           { src: ['src/templates/**/*.md.hbs', '!src/**/partial.md.hbs', '!src/**/layouts/*.*'], dest: 'dist/inspect/' }
@@ -99,7 +98,7 @@ module.exports = function(grunt) {
       // Assemble's pre-defined variables, rendered to HTML
       variables_html: {
         options: {
-          layout: 'src/templates/layouts/default.hbs'
+          layout: 'src/templates/layouts/default-layout.hbs'
         },
         files: [
           { src: ['src/templates/assemble/*.hbs', '!src/templates/assemble/*.md.hbs'], dest: 'dist/assemble/html/' }

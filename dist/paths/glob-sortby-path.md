@@ -1,11 +1,12 @@
-# glob-sortby-path.md output
+# Globbing helper
 
 This layout is used to demonstrate how paths will be constructed in 
 different contexts, and using different src-dest arrangements.
 
-# GLOB
 
-The "sorting" examples are placeholders for a second parameter that is a wip. 
+
+# Globbing helper
+The "sorting" examples are placeholders for a second parameter that is on the way.
 
 ## Sort by path 
 ## Blockquotes
@@ -951,6 +952,7 @@ Renders to:
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -998,6 +1000,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -1501,9 +1511,25 @@ page.basename: glob-sortby-path
 page.extname:  
 page.ext:      
 
+#### glob-sortby-path.md
+page.dirname:  dist/paths
+page.filename: glob-sortby-path.md
+page.pagename: glob-sortby-path.md
+page.basename: glob-sortby-path
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### glob-sortby-path.md
+dirname:       dist/paths
+filename:      glob-sortby-path.md
+pagename:      glob-sortby-path.md
+basename:      glob-sortby-path
+extname:       
+ext:           
 
 #### glob-sortby-path.md
 dirname:       dist/paths

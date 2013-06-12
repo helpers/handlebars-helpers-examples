@@ -1,6 +1,8 @@
-# glob.md output
+# Globbing helper
 
-# README
+
+
+# Globbing helper
 
 
 ## Single file explicit
@@ -30,7 +32,8 @@ Renders to:
 ## Debug Info
 
 ``` json
-{ dirname: 'dist/inspect',
+{ title: 'Globbing helper',
+  dirname: 'dist/inspect',
   filename: 'glob.md',
   pageName: 'glob.md',
   pagename: 'glob.md',
@@ -47,6 +50,6 @@ Renders to:
      [arguments]: null,
      [caller]: null,
      [prototype]: { [constructor]: [Circular] } },
-  data: {} }
+  data: { title: 'Globbing helper' } }
 ```
 

@@ -30,6 +30,7 @@ Get values from `package.json`
 
 [authors](../assets) 
 [each-pages](../assets) 
+[opt](../assets) 
 [roadmap](../assets) 
 [travis](../assets) 
 [collections](../assets) 
@@ -77,6 +78,14 @@ this.dirname:  dist/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dist/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
 this.extname:  
 this.ext:      
 
@@ -580,9 +589,25 @@ page.basename: value
 page.extname:  
 page.ext:      
 
+#### value.md
+page.dirname:  dist/paths
+page.filename: value.md
+page.pagename: value.md
+page.basename: value
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### value.md
+dirname:       dist/paths
+filename:      value.md
+pagename:      value.md
+basename:      value
+extname:       
+ext:           
 
 #### value.md
 dirname:       dist/paths

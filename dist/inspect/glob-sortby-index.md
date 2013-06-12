@@ -1,8 +1,10 @@
-# glob-sortby-index.md output
+# Globbing helper
 
-# GLOB
 
-The "sorting" examples are placeholders for a second parameter that is a wip. 
+
+# Globbing helper
+The "sorting" examples are placeholders for a second parameter that is on the way.
+
 
 ## Sort by index 
 ## Blockquotes
@@ -938,7 +940,9 @@ Renders to:
 ## Debug Info
 
 ``` json
-{ dirname: 'dist/inspect',
+{ title: 'Globbing helper',
+  description: 'The "sorting" examples are placeholders for a second parameter that is on the way.',
+  dirname: 'dist/inspect',
   filename: 'glob-sortby-index.md',
   pageName: 'glob-sortby-index.md',
   pagename: 'glob-sortby-index.md',
@@ -955,6 +959,8 @@ Renders to:
      [arguments]: null,
      [caller]: null,
      [prototype]: { [constructor]: [Circular] } },
-  data: {} }
+  data: 
+   { title: 'Globbing helper',
+     description: 'The "sorting" examples are placeholders for a second parameter that is on the way.' } }
 ```
 
