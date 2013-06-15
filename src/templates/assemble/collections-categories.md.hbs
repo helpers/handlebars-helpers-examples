@@ -1,0 +1,18 @@
+---
+title: Categories
+description: Example of how to use "categories", a built-in collection in Assemble
+categories: 
+  - programming
+  - semicolons
+  - beards
+---
+<div class="page-header">
+  <h1>{{title}}</h1>
+  <p class="lead">{{description}}</p>
+</div>
+
+<ul>
+{{#categories}}
+  <li>{{category}}</li>
+{{/categories}}
+</ul>
