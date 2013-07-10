@@ -1,11 +1,11 @@
 {
-  "name": "helper-lib-examples",
+  "name": "handlebars-helpers-examples",
   "version": "0.1.0",
-  "homepage": "assemble/helper-lib-examples",
+  "homepage": "assemble/handlebars-helpers-examples",
   "main": "Gruntfile.js",
   "dependencies": {
     "grunt-contrib-clean": "~0.4.0",
-    "helper-lib": ">= 0.2.3",
+    "handlebars-helpers": "~0.2.3",
     "assemble": ">= 0.3.73",
     "grunt": "~0.4.1"
   }
