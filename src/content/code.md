@@ -37,7 +37,7 @@ assemble: {
   // Files to build into pages
   pages: {
     src:  'templates/pages/*.hbs',
-    dest: 'dist/'
+    dest: 'output/'
   }
 }
 ```

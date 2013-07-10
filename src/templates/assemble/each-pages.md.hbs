@@ -4,7 +4,7 @@
 Relative helper outside of the "each pages" block.
 
 ``` html
-{{relative currentPage assets}}
+\{{relative page assets}}
 ```
 
 ## Each Pages
@@ -21,7 +21,7 @@ From **../page.dest**, to: **assets**: {{relative ../page.dest assets}}
 ```
 ``` html
 {{#each pages}}
-From **../page.dest**, to: **"dist/assets"**: {{relative ../page.dest 'dist/assets'}}
+From **../page.dest**, to: **"output/assets"**: {{relative ../page.dest 'output/assets'}}
 {{/each}}
 ```
 ``` html

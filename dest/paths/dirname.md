@@ -8,7 +8,7 @@ different contexts, and using different src-dest arrangements.
 
 
 ## directory
-One: ./output/md
+One: ./dest/md
 Two: C:\\orandea\\impl\
 Three: .
 Four: .
@@ -30,11 +30,9 @@ Seven: src/content
 ../assets
 
 
-[authors](../assets) 
+[collections-categories](../assets) 
+[collections-tags](../assets) 
 [each-pages](../assets) 
-[opt](../assets) 
-[roadmap](../assets) 
-[travis](../assets) 
 [embed](../assets) 
 [jsfiddle](../assets) 
 [collections](../assets) 
@@ -64,6 +62,11 @@ Seven: src/content
 [extname](../assets) 
 [filename](../assets) 
 [relative](../assets) 
+[authors](../assets) 
+[gitlog](../assets) 
+[opt](../assets) 
+[roadmap](../assets) 
+[travis](../assets) 
 [hyphenate](../assets) 
 [occurences](../assets) 
 [replace](../assets) 
@@ -73,11 +76,19 @@ Seven: src/content
 
 ### {{#each pages}} "this" context
 
-#### authors.md
+#### collections-categories.md
 this.dirname:  dest/paths
-this.filename: authors.md
-this.pagename: authors.md
-this.basename: authors
+this.filename: collections-categories.md
+this.pagename: collections-categories.md
+this.basename: collections-categories
+this.extname:  
+this.ext:      
+
+#### collections-tags.md
+this.dirname:  dest/paths
+this.filename: collections-tags.md
+this.pagename: collections-tags.md
+this.basename: collections-tags
 this.extname:  
 this.ext:      
 
@@ -86,30 +97,6 @@ this.dirname:  dest/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
-this.extname:  
-this.ext:      
-
-#### opt.md
-this.dirname:  dest/paths
-this.filename: opt.md
-this.pagename: opt.md
-this.basename: opt
-this.extname:  
-this.ext:      
-
-#### roadmap.md
-this.dirname:  dest/paths
-this.filename: roadmap.md
-this.pagename: roadmap.md
-this.basename: roadmap
-this.extname:  
-this.ext:      
-
-#### travis.md
-this.dirname:  dest/paths
-this.filename: travis.md
-this.pagename: travis.md
-this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -342,6 +329,46 @@ this.dirname:  dest/paths
 this.filename: relative.md
 this.pagename: relative.md
 this.basename: relative
+this.extname:  
+this.ext:      
+
+#### authors.md
+this.dirname:  dest/paths
+this.filename: authors.md
+this.pagename: authors.md
+this.basename: authors
+this.extname:  
+this.ext:      
+
+#### gitlog.md
+this.dirname:  dest/paths
+this.filename: gitlog.md
+this.pagename: gitlog.md
+this.basename: gitlog
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dest/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
+this.extname:  
+this.ext:      
+
+#### roadmap.md
+this.dirname:  dest/paths
+this.filename: roadmap.md
+this.pagename: roadmap.md
+this.basename: roadmap
+this.extname:  
+this.ext:      
+
+#### travis.md
+this.dirname:  dest/paths
+this.filename: travis.md
+this.pagename: travis.md
+this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -701,9 +728,57 @@ page.basename: dirname
 page.extname:  
 page.ext:      
 
+#### dirname.md
+page.dirname:  dest/paths
+page.filename: dirname.md
+page.pagename: dirname.md
+page.basename: dirname
+page.extname:  
+page.ext:      
+
+#### dirname.md
+page.dirname:  dest/paths
+page.filename: dirname.md
+page.pagename: dirname.md
+page.basename: dirname
+page.extname:  
+page.ext:      
+
+#### dirname.md
+page.dirname:  dest/paths
+page.filename: dirname.md
+page.pagename: dirname.md
+page.basename: dirname
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### dirname.md
+dirname:       dest/paths
+filename:      dirname.md
+pagename:      dirname.md
+basename:      dirname
+extname:       
+ext:           
+
+#### dirname.md
+dirname:       dest/paths
+filename:      dirname.md
+pagename:      dirname.md
+basename:      dirname
+extname:       
+ext:           
+
+#### dirname.md
+dirname:       dest/paths
+filename:      dirname.md
+pagename:      dirname.md
+basename:      dirname
+extname:       
+ext:           
 
 #### dirname.md
 dirname:       dest/paths

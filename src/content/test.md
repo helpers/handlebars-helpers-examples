@@ -10,10 +10,10 @@ Usage:
 ```
 Example:
 ``` handlebars
-<a href="{{relative "src" "dist"}}/assets/css/styles.css"></a> 
+<a href="{{relative "src" "dest"}}/assets/css/styles.css"></a> 
 
 ```
 Renders to: 
 ``` html
-<a href="../../dist/assets/css/styles.css"></a> 
+<a href="../../assets/css/styles.css"></a> 
 ```

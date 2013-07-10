@@ -16,7 +16,7 @@ Ext: ""
   pageName: 'opt.md',
   pagename: 'opt.md',
   basename: 'opt',
-  src: 'src/templates/assemble/opt.md.hbs',
+  src: 'src/templates/readme/opt.md.hbs',
   dest: 'dest/inspect/opt.md',
   assets: '../assets',
   ext: '',

@@ -24,31 +24,32 @@
 ## Debug Info
 
 ``` json
-{ title: 'Associative arrays',
-  page: 
-   { [Function]
-     [length]: 2,
-     [name]: '',
-     [arguments]: null,
-     [caller]: null,
-     [prototype]: { [constructor]: [Circular] } },
-  assets: '../assets',
-  tags: 'foo, bar, baz',
-  dest: 'dest/inspect/collections.md',
-  ext: '',
-  pageName: 'collections.md',
-  people: { name: 'John Smith', age: 33 },
+[ 'tags',
+  'categories',
   pagename: 'collections.md',
+  extname: '',
   morePeople: { name: 'Grace Jones', age: 21 },
   filename: 'collections.md',
-  data: 
-   { title: 'Associative arrays',
-     people: { name: 'John Smith', age: 33 },
-     morePeople: { name: 'Grace Jones', age: 21 },
-     tags: 'foo, bar, baz' },
   src: 'src/templates/collections/collections.md.hbs',
-  extname: '',
+  basename: 'collections',
+  dest: 'dest/inspect/collections.md',
   dirname: 'dest/inspect',
-  basename: 'collections' }
+  page: { [Function]
+    [length]: 2,
+    [name]: '',
+    [arguments]: null,
+    [caller]: null,
+    [prototype]: { [constructor]: [Circular] } },
+  pageName: 'collections.md',
+  title: 'Associative arrays',
+  people: { name: 'John Smith', age: 33 },
+  ext: '',
+  tags: 'foo, bar, baz',
+  assets: '../assets',
+  [length]: 2,
+  data: { title: 'Associative arrays',
+    people: { name: 'John Smith', age: 33 },
+    morePeople: { name: 'Grace Jones', age: 21 },
+    tags: 'foo, bar, baz' } ]
 ```
 

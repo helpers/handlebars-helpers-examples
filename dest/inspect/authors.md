@@ -29,7 +29,7 @@ As with JavaScript, helper names are case sensitive. So we take advantage of tha
   pageName: 'authors.md',
   pagename: 'authors.md',
   basename: 'authors',
-  src: 'src/templates/assemble/authors.md.hbs',
+  src: 'src/templates/readme/authors.md.hbs',
   dest: 'dest/inspect/authors.md',
   assets: '../assets',
   ext: '',

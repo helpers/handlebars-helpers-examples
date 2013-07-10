@@ -7,24 +7,24 @@ different contexts, and using different src-dest arrangements.
 ## Stringify Helper
 
 **Stringify**: {
-  "name": "helper-lib-examples",
-  "description": "Shows how to use helpers from helper-lib with Assemble.",
+  "name": "handlebars-helpers-examples",
+  "description": "Shows how to use helpers from handlebars-helpers with Assemble.",
   "version": "0.1.0",
-  "homepage": "https://github.com/assemble/helper-lib-examples",
+  "homepage": "https://github.com/assemble/handlebars-helpers-examples",
   "author": {
     "name": "assemble"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/assemble/helper-lib-examples.git"
+    "url": "git://github.com/assemble/handlebars-helpers-examples.git"
   },
   "bugs": {
-    "url": "https://github.com/assemble/helper-lib-examples/issues"
+    "url": "https://github.com/assemble/handlebars-helpers-examples/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/assemble/helper-lib-examples/blob/master/LICENSE-MIT"
+      "url": "https://github.com/assemble/handlebars-helpers-examples/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -32,19 +32,19 @@ different contexts, and using different src-dest arrangements.
     "test": "grunt assemble"
   },
   "devDependencies": {
-    "assemble": ">= 0.3.80",
+    "assemble": "~0.4.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt": "~0.4.1"
   },
   "keywords": [
     "assemble",
-    "helpers",
-    "helper",
-    "helper-lib",
     "filters",
     "handlebars helper",
     "handlebars helpers",
     "handlebars",
+    "handlebars-helpers",
+    "helper",
+    "helpers",
     "templates"
   ]
 }
@@ -63,11 +63,9 @@ different contexts, and using different src-dest arrangements.
 ../assets
 
 
-[authors](../assets) 
+[collections-categories](../assets) 
+[collections-tags](../assets) 
 [each-pages](../assets) 
-[opt](../assets) 
-[roadmap](../assets) 
-[travis](../assets) 
 [embed](../assets) 
 [jsfiddle](../assets) 
 [collections](../assets) 
@@ -97,6 +95,11 @@ different contexts, and using different src-dest arrangements.
 [extname](../assets) 
 [filename](../assets) 
 [relative](../assets) 
+[authors](../assets) 
+[gitlog](../assets) 
+[opt](../assets) 
+[roadmap](../assets) 
+[travis](../assets) 
 [hyphenate](../assets) 
 [occurences](../assets) 
 [replace](../assets) 
@@ -106,11 +109,19 @@ different contexts, and using different src-dest arrangements.
 
 ### {{#each pages}} "this" context
 
-#### authors.md
+#### collections-categories.md
 this.dirname:  dest/paths
-this.filename: authors.md
-this.pagename: authors.md
-this.basename: authors
+this.filename: collections-categories.md
+this.pagename: collections-categories.md
+this.basename: collections-categories
+this.extname:  
+this.ext:      
+
+#### collections-tags.md
+this.dirname:  dest/paths
+this.filename: collections-tags.md
+this.pagename: collections-tags.md
+this.basename: collections-tags
 this.extname:  
 this.ext:      
 
@@ -119,30 +130,6 @@ this.dirname:  dest/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
-this.extname:  
-this.ext:      
-
-#### opt.md
-this.dirname:  dest/paths
-this.filename: opt.md
-this.pagename: opt.md
-this.basename: opt
-this.extname:  
-this.ext:      
-
-#### roadmap.md
-this.dirname:  dest/paths
-this.filename: roadmap.md
-this.pagename: roadmap.md
-this.basename: roadmap
-this.extname:  
-this.ext:      
-
-#### travis.md
-this.dirname:  dest/paths
-this.filename: travis.md
-this.pagename: travis.md
-this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -375,6 +362,46 @@ this.dirname:  dest/paths
 this.filename: relative.md
 this.pagename: relative.md
 this.basename: relative
+this.extname:  
+this.ext:      
+
+#### authors.md
+this.dirname:  dest/paths
+this.filename: authors.md
+this.pagename: authors.md
+this.basename: authors
+this.extname:  
+this.ext:      
+
+#### gitlog.md
+this.dirname:  dest/paths
+this.filename: gitlog.md
+this.pagename: gitlog.md
+this.basename: gitlog
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dest/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
+this.extname:  
+this.ext:      
+
+#### roadmap.md
+this.dirname:  dest/paths
+this.filename: roadmap.md
+this.pagename: roadmap.md
+this.basename: roadmap
+this.extname:  
+this.ext:      
+
+#### travis.md
+this.dirname:  dest/paths
+this.filename: travis.md
+this.pagename: travis.md
+this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -734,9 +761,57 @@ page.basename: stringify
 page.extname:  
 page.ext:      
 
+#### stringify.md
+page.dirname:  dest/paths
+page.filename: stringify.md
+page.pagename: stringify.md
+page.basename: stringify
+page.extname:  
+page.ext:      
+
+#### stringify.md
+page.dirname:  dest/paths
+page.filename: stringify.md
+page.pagename: stringify.md
+page.basename: stringify
+page.extname:  
+page.ext:      
+
+#### stringify.md
+page.dirname:  dest/paths
+page.filename: stringify.md
+page.pagename: stringify.md
+page.basename: stringify
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### stringify.md
+dirname:       dest/paths
+filename:      stringify.md
+pagename:      stringify.md
+basename:      stringify
+extname:       
+ext:           
+
+#### stringify.md
+dirname:       dest/paths
+filename:      stringify.md
+pagename:      stringify.md
+basename:      stringify
+extname:       
+ext:           
+
+#### stringify.md
+dirname:       dest/paths
+filename:      stringify.md
+pagename:      stringify.md
+basename:      stringify
+extname:       
+ext:           
 
 #### stringify.md
 dirname:       dest/paths

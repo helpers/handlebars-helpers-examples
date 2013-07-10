@@ -18,7 +18,7 @@
   pageName: 'roadmap.md',
   pagename: 'roadmap.md',
   basename: 'roadmap',
-  src: 'src/templates/assemble/roadmap.md.hbs',
+  src: 'src/templates/readme/roadmap.md.hbs',
   dest: 'dest/inspect/roadmap.md',
   assets: '../assets',
   ext: '',

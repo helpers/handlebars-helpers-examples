@@ -1,22 +1,39 @@
-<h1>Pages Collection and Relative Helper</h1>
-<p></p>
+---
+title: Pages
+description: Pages variable (collection) and relative helper
+---
 
-One: 
+TODO: This needs to be changed to focus on variables on the page object, not the pages collection. Move "pages" examples to a layout.
 
-{{relative currentPage assets}}
+<div class="page-header">
+  <h1>{{title}}</h1>
+  <p class="lead">{{description}}</p>
+</div>
+
+<a href="{{relative page assets}}" title="{{page.title}}"></a>
 
 {{#each pages}}
-  {{relative ../page.dest 'this.dest'}}
+  <a href="{{relative ../page.dest this.dest}}" title="{{../page.title}}"></a>
 {{/each}}
 
 {{#each pages}}
-  {{relative ../page.dest 'dist/file/copy.md'}}
+  <a href="{{relative ../page.dest 'dest/file/copy.md'}}" title="{{../page.title}}"></a>
 {{/each}}
 
 {{#each pages}}
-  {{relative ../page.dest 'dist/assets'}}
+  <a href="{{relative ../page.dest 'dest/assets'}}" title="{{../page.title}}"></a>
 {{/each}}
 
 {{#each pages}}
-  {{relative ../page.dest 'src/content'}}
+  <a href="{{relative ../page.dest 'src/content'}}" title="{{../page.title}}"></a>
 {{/each}}
+
+
+<p>Vestibulum posuere, quam sed bibendum posuere, orci est semper libero, nec congue tortor arcu eget velit. Mauris condimentum pulvinar condimentum. Sed suscipit elit tellus. Nunc vel fringilla massa. Aliquam sed velit lorem. Sed feugiat faucibus leo, ut iaculis eros ullamcorper vitae. </p>
+
+<p>Vestibulum posuere, quam sed bibendum posuere, orci est semper libero, nec congue tortor arcu eget velit. Mauris condimentum pulvinar condimentum. Sed suscipit elit tellus. Nunc vel fringilla massa. Aliquam sed velit lorem. Sed feugiat faucibus leo, ut iaculis eros ullamcorper vitae. </p>
+
+<pre>
+  Proin orci nisi, commodo eleifend elementum at, fermentum a velit. Sed venenatis facilisis eros, et elementum magna faucibus et. Sed in tellus lectus. Morbi vitae diam eu lorem malesuada rhoncus sit amet vitae felis. Proin ultrices ante et felis adipiscing rutrum.
+</pre>
+

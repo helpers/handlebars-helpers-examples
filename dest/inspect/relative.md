@@ -31,8 +31,8 @@
 
 ``` json
 { title: 'Relative Path Helpers',
-  from: './output/md/authors.md',
-  to: './output/md/changelog.md',
+  from: './dest/md/authors.md',
+  to: './dest/md/changelog.md',
   dirname: 'dest/inspect',
   filename: 'relative.md',
   pageName: 'relative.md',
@@ -52,7 +52,7 @@
      [prototype]: { [constructor]: [Circular] } },
   data: 
    { title: 'Relative Path Helpers',
-     from: './output/md/authors.md',
-     to: './output/md/changelog.md' } }
+     from: './dest/md/authors.md',
+     to: './dest/md/changelog.md' } }
 ```
 

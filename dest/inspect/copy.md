@@ -11,7 +11,7 @@ Copy from "A to B": **true**
 ``` json
 { title: 'File Helpers',
   from: './src/templates/code/embed.md.hbs',
-  to: './output/copied.txt',
+  to: './dest/copied.txt',
   dirname: 'dest/inspect',
   filename: 'copy.md',
   pageName: 'copy.md',
@@ -32,6 +32,6 @@ Copy from "A to B": **true**
   data: 
    { title: 'File Helpers',
      from: './src/templates/code/embed.md.hbs',
-     to: './output/copied.txt' } }
+     to: './dest/copied.txt' } }
 ```
 

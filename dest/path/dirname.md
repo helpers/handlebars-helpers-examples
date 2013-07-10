@@ -3,7 +3,7 @@
 
 
 ## directory
-One: ./output/md
+One: ./dest/md
 Two: C:\\orandea\\impl\
 Three: .
 Four: .

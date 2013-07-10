@@ -5,7 +5,7 @@
 
 
 ## directory
-One: ./output/md
+One: ./dest/md
 Two: C:\\orandea\\impl\
 Three: .
 Four: .
@@ -20,8 +20,8 @@ Seven: src/content
 
 ``` json
 { title: 'Path Helpers',
-  from: './output/md/authors.md',
-  to: './output/md/changelog.md',
+  from: './dest/md/authors.md',
+  to: './dest/md/changelog.md',
   dirname: 'dest/inspect',
   filename: 'dirname.md',
   pageName: 'dirname.md',
@@ -41,7 +41,7 @@ Seven: src/content
      [prototype]: { [constructor]: [Circular] } },
   data: 
    { title: 'Path Helpers',
-     from: './output/md/authors.md',
-     to: './output/md/changelog.md' } }
+     from: './dest/md/authors.md',
+     to: './dest/md/changelog.md' } }
 ```
 

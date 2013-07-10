@@ -17,11 +17,9 @@ different contexts, and using different src-dest arrangements.
 ../assets
 
 
-[authors](../assets) 
+[collections-categories](../assets) 
+[collections-tags](../assets) 
 [each-pages](../assets) 
-[opt](../assets) 
-[roadmap](../assets) 
-[travis](../assets) 
 [embed](../assets) 
 [jsfiddle](../assets) 
 [collections](../assets) 
@@ -51,6 +49,11 @@ different contexts, and using different src-dest arrangements.
 [extname](../assets) 
 [filename](../assets) 
 [relative](../assets) 
+[authors](../assets) 
+[gitlog](../assets) 
+[opt](../assets) 
+[roadmap](../assets) 
+[travis](../assets) 
 [hyphenate](../assets) 
 [occurences](../assets) 
 [replace](../assets) 
@@ -60,11 +63,19 @@ different contexts, and using different src-dest arrangements.
 
 ### {{#each pages}} "this" context
 
-#### authors.md
+#### collections-categories.md
 this.dirname:  dest/paths
-this.filename: authors.md
-this.pagename: authors.md
-this.basename: authors
+this.filename: collections-categories.md
+this.pagename: collections-categories.md
+this.basename: collections-categories
+this.extname:  
+this.ext:      
+
+#### collections-tags.md
+this.dirname:  dest/paths
+this.filename: collections-tags.md
+this.pagename: collections-tags.md
+this.basename: collections-tags
 this.extname:  
 this.ext:      
 
@@ -73,30 +84,6 @@ this.dirname:  dest/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
-this.extname:  
-this.ext:      
-
-#### opt.md
-this.dirname:  dest/paths
-this.filename: opt.md
-this.pagename: opt.md
-this.basename: opt
-this.extname:  
-this.ext:      
-
-#### roadmap.md
-this.dirname:  dest/paths
-this.filename: roadmap.md
-this.pagename: roadmap.md
-this.basename: roadmap
-this.extname:  
-this.ext:      
-
-#### travis.md
-this.dirname:  dest/paths
-this.filename: travis.md
-this.pagename: travis.md
-this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -329,6 +316,46 @@ this.dirname:  dest/paths
 this.filename: relative.md
 this.pagename: relative.md
 this.basename: relative
+this.extname:  
+this.ext:      
+
+#### authors.md
+this.dirname:  dest/paths
+this.filename: authors.md
+this.pagename: authors.md
+this.basename: authors
+this.extname:  
+this.ext:      
+
+#### gitlog.md
+this.dirname:  dest/paths
+this.filename: gitlog.md
+this.pagename: gitlog.md
+this.basename: gitlog
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dest/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
+this.extname:  
+this.ext:      
+
+#### roadmap.md
+this.dirname:  dest/paths
+this.filename: roadmap.md
+this.pagename: roadmap.md
+this.basename: roadmap
+this.extname:  
+this.ext:      
+
+#### travis.md
+this.dirname:  dest/paths
+this.filename: travis.md
+this.pagename: travis.md
+this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -688,9 +715,57 @@ page.basename: extract
 page.extname:  
 page.ext:      
 
+#### extract.md
+page.dirname:  dest/paths
+page.filename: extract.md
+page.pagename: extract.md
+page.basename: extract
+page.extname:  
+page.ext:      
+
+#### extract.md
+page.dirname:  dest/paths
+page.filename: extract.md
+page.pagename: extract.md
+page.basename: extract
+page.extname:  
+page.ext:      
+
+#### extract.md
+page.dirname:  dest/paths
+page.filename: extract.md
+page.pagename: extract.md
+page.basename: extract
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### extract.md
+dirname:       dest/paths
+filename:      extract.md
+pagename:      extract.md
+basename:      extract
+extname:       
+ext:           
+
+#### extract.md
+dirname:       dest/paths
+filename:      extract.md
+pagename:      extract.md
+basename:      extract
+extname:       
+ext:           
+
+#### extract.md
+dirname:       dest/paths
+filename:      extract.md
+pagename:      extract.md
+basename:      extract
+extname:       
+ext:           
 
 #### extract.md
 dirname:       dest/paths

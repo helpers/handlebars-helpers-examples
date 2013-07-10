@@ -3,7 +3,114 @@
 This layout is used to demonstrate how paths will be constructed in 
 different contexts, and using different src-dest arrangements.
 
-switchreadme-titletravis-badgedtddtravischangelogroadmapandgtgteif_eqif_gtif_gteqif_ltif_lteqifAnyisisntltlteorunless_equnless_gtunless_gtequnless_ltunless_lteqextractmatchlistHelperscopyglobtocdefineSectionrenderSectionincludepartialoptformatDatenowtimeagoexticonglyphiconsectionpushlinkcssjsulolDOCTYPEinflectordinalizehelperMissingblockHelperMissingexpandMappingexpandYAMLexpandJSONlogdebuginspectmarkdownmdaddsubtractdividemultiplyfloorceilroundsumdefaultnooptoFixedtoPrecisiontoExponentialtoInttoFloattoAbbraddCommasdirnamerelativebasenamefilenameextnameembedgistjsfiddlecapitalizeEachcapitalizeFirstcenterdashifyellipsisformatPhoneNumberhyphenatelowercaseoccurrencesreplacereversesafeStringsentencetitleizetruncateuppercaseurl_parseurl_resolvestripQuerystringencodeURIdecodeURI
+switch
+readme-title
+travis-badge
+dtdd
+travis
+changelog
+roadmap
+and
+gt
+gte
+if_eq
+if_gt
+if_gteq
+if_lt
+if_lteq
+ifAny
+is
+isnt
+lt
+lte
+or
+unless_eq
+unless_gt
+unless_gteq
+unless_lt
+unless_lteq
+extract
+match
+listHelpers
+copy
+glob
+toc
+defineSection
+renderSection
+include
+partial
+opt
+formatDate
+now
+timeago
+exticon
+glyphicon
+section
+push
+link
+css
+js
+ul
+ol
+DOCTYPE
+inflect
+ordinalize
+helperMissing
+blockHelperMissing
+expandMapping
+expandYAML
+expandJSON
+log
+debug
+inspect
+markdown
+md
+add
+subtract
+divide
+multiply
+floor
+ceil
+round
+sum
+default
+noop
+toFixed
+toPrecision
+toExponential
+toInt
+toFloat
+toAbbr
+addCommas
+dirname
+relative
+basename
+filename
+extname
+embed
+gist
+jsfiddle
+capitalizeEach
+capitalizeFirst
+center
+dashify
+ellipsis
+formatPhoneNumber
+hyphenate
+lowercase
+occurrences
+replace
+reverse
+safeString
+sentence
+titleize
+truncate
+uppercase
+url_parse
+url_resolve
+stripQuerystring
+encodeURI
+decodeURI
 
 
 ---
@@ -16,11 +123,9 @@ switchreadme-titletravis-badgedtddtravischangelogroadmapandgtgteif_eqif_gtif_gte
 ../assets
 
 
-[authors](../assets) 
+[collections-categories](../assets) 
+[collections-tags](../assets) 
 [each-pages](../assets) 
-[opt](../assets) 
-[roadmap](../assets) 
-[travis](../assets) 
 [embed](../assets) 
 [jsfiddle](../assets) 
 [collections](../assets) 
@@ -50,6 +155,11 @@ switchreadme-titletravis-badgedtddtravischangelogroadmapandgtgteif_eqif_gtif_gte
 [extname](../assets) 
 [filename](../assets) 
 [relative](../assets) 
+[authors](../assets) 
+[gitlog](../assets) 
+[opt](../assets) 
+[roadmap](../assets) 
+[travis](../assets) 
 [hyphenate](../assets) 
 [occurences](../assets) 
 [replace](../assets) 
@@ -59,11 +169,19 @@ switchreadme-titletravis-badgedtddtravischangelogroadmapandgtgteif_eqif_gtif_gte
 
 ### {{#each pages}} "this" context
 
-#### authors.md
+#### collections-categories.md
 this.dirname:  dest/paths
-this.filename: authors.md
-this.pagename: authors.md
-this.basename: authors
+this.filename: collections-categories.md
+this.pagename: collections-categories.md
+this.basename: collections-categories
+this.extname:  
+this.ext:      
+
+#### collections-tags.md
+this.dirname:  dest/paths
+this.filename: collections-tags.md
+this.pagename: collections-tags.md
+this.basename: collections-tags
 this.extname:  
 this.ext:      
 
@@ -72,30 +190,6 @@ this.dirname:  dest/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
-this.extname:  
-this.ext:      
-
-#### opt.md
-this.dirname:  dest/paths
-this.filename: opt.md
-this.pagename: opt.md
-this.basename: opt
-this.extname:  
-this.ext:      
-
-#### roadmap.md
-this.dirname:  dest/paths
-this.filename: roadmap.md
-this.pagename: roadmap.md
-this.basename: roadmap
-this.extname:  
-this.ext:      
-
-#### travis.md
-this.dirname:  dest/paths
-this.filename: travis.md
-this.pagename: travis.md
-this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -328,6 +422,46 @@ this.dirname:  dest/paths
 this.filename: relative.md
 this.pagename: relative.md
 this.basename: relative
+this.extname:  
+this.ext:      
+
+#### authors.md
+this.dirname:  dest/paths
+this.filename: authors.md
+this.pagename: authors.md
+this.basename: authors
+this.extname:  
+this.ext:      
+
+#### gitlog.md
+this.dirname:  dest/paths
+this.filename: gitlog.md
+this.pagename: gitlog.md
+this.basename: gitlog
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dest/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
+this.extname:  
+this.ext:      
+
+#### roadmap.md
+this.dirname:  dest/paths
+this.filename: roadmap.md
+this.pagename: roadmap.md
+this.basename: roadmap
+this.extname:  
+this.ext:      
+
+#### travis.md
+this.dirname:  dest/paths
+this.filename: travis.md
+this.pagename: travis.md
+this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -687,9 +821,57 @@ page.basename: match
 page.extname:  
 page.ext:      
 
+#### match.md
+page.dirname:  dest/paths
+page.filename: match.md
+page.pagename: match.md
+page.basename: match
+page.extname:  
+page.ext:      
+
+#### match.md
+page.dirname:  dest/paths
+page.filename: match.md
+page.pagename: match.md
+page.basename: match
+page.extname:  
+page.ext:      
+
+#### match.md
+page.dirname:  dest/paths
+page.filename: match.md
+page.pagename: match.md
+page.basename: match
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### match.md
+dirname:       dest/paths
+filename:      match.md
+pagename:      match.md
+basename:      match
+extname:       
+ext:           
+
+#### match.md
+dirname:       dest/paths
+filename:      match.md
+pagename:      match.md
+basename:      match
+extname:       
+ext:           
+
+#### match.md
+dirname:       dest/paths
+filename:      match.md
+pagename:      match.md
+basename:      match
+extname:       
+ext:           
 
 #### match.md
 dirname:       dest/paths

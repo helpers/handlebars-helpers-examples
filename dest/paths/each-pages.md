@@ -9,22 +9,18 @@ different contexts, and using different src-dest arrangements.
 Relative helper outside of the "each pages" block.
 
 ``` html
-../assets
+{{relative page assets}}
 ```
 
 ## Each Pages
 
 ``` html
 
-From **../page.dest**, to: **this.dest**: authors.md
+From **../page.dest**, to: **this.dest**: collections-categories.md
+
+From **../page.dest**, to: **this.dest**: collections-tags.md
 
 From **../page.dest**, to: **this.dest**: each-pages.md
-
-From **../page.dest**, to: **this.dest**: opt.md
-
-From **../page.dest**, to: **this.dest**: roadmap.md
-
-From **../page.dest**, to: **this.dest**: travis.md
 
 From **../page.dest**, to: **this.dest**: embed.md
 
@@ -83,6 +79,16 @@ From **../page.dest**, to: **this.dest**: extname.md
 From **../page.dest**, to: **this.dest**: filename.md
 
 From **../page.dest**, to: **this.dest**: relative.md
+
+From **../page.dest**, to: **this.dest**: authors.md
+
+From **../page.dest**, to: **this.dest**: gitlog.md
+
+From **../page.dest**, to: **this.dest**: opt.md
+
+From **../page.dest**, to: **this.dest**: roadmap.md
+
+From **../page.dest**, to: **this.dest**: travis.md
 
 From **../page.dest**, to: **this.dest**: hyphenate.md
 
@@ -175,89 +181,107 @@ From **../page.dest**, to: **assets**: ../../../assets
 
 From **../page.dest**, to: **assets**: ../../../assets
 
-```
-``` html
+From **../page.dest**, to: **assets**: ../../../assets
 
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
+From **../page.dest**, to: **assets**: ../../../assets
 
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
+From **../page.dest**, to: **assets**: ../../../assets
 
 ```
 ``` html
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+```
+``` html
+
+From **../page.dest**, to: **"src/content"**: ../../src/content
+
+From **../page.dest**, to: **"src/content"**: ../../src/content
+
+From **../page.dest**, to: **"src/content"**: ../../src/content
 
 From **../page.dest**, to: **"src/content"**: ../../src/content
 
@@ -351,11 +375,9 @@ From **../page.dest**, to: **"src/content"**: ../../src/content
 ../assets
 
 
-[authors](../assets) 
+[collections-categories](../assets) 
+[collections-tags](../assets) 
 [each-pages](../assets) 
-[opt](../assets) 
-[roadmap](../assets) 
-[travis](../assets) 
 [embed](../assets) 
 [jsfiddle](../assets) 
 [collections](../assets) 
@@ -385,6 +407,11 @@ From **../page.dest**, to: **"src/content"**: ../../src/content
 [extname](../assets) 
 [filename](../assets) 
 [relative](../assets) 
+[authors](../assets) 
+[gitlog](../assets) 
+[opt](../assets) 
+[roadmap](../assets) 
+[travis](../assets) 
 [hyphenate](../assets) 
 [occurences](../assets) 
 [replace](../assets) 
@@ -394,11 +421,19 @@ From **../page.dest**, to: **"src/content"**: ../../src/content
 
 ### {{#each pages}} "this" context
 
-#### authors.md
+#### collections-categories.md
 this.dirname:  dest/paths
-this.filename: authors.md
-this.pagename: authors.md
-this.basename: authors
+this.filename: collections-categories.md
+this.pagename: collections-categories.md
+this.basename: collections-categories
+this.extname:  
+this.ext:      
+
+#### collections-tags.md
+this.dirname:  dest/paths
+this.filename: collections-tags.md
+this.pagename: collections-tags.md
+this.basename: collections-tags
 this.extname:  
 this.ext:      
 
@@ -407,30 +442,6 @@ this.dirname:  dest/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
-this.extname:  
-this.ext:      
-
-#### opt.md
-this.dirname:  dest/paths
-this.filename: opt.md
-this.pagename: opt.md
-this.basename: opt
-this.extname:  
-this.ext:      
-
-#### roadmap.md
-this.dirname:  dest/paths
-this.filename: roadmap.md
-this.pagename: roadmap.md
-this.basename: roadmap
-this.extname:  
-this.ext:      
-
-#### travis.md
-this.dirname:  dest/paths
-this.filename: travis.md
-this.pagename: travis.md
-this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -663,6 +674,46 @@ this.dirname:  dest/paths
 this.filename: relative.md
 this.pagename: relative.md
 this.basename: relative
+this.extname:  
+this.ext:      
+
+#### authors.md
+this.dirname:  dest/paths
+this.filename: authors.md
+this.pagename: authors.md
+this.basename: authors
+this.extname:  
+this.ext:      
+
+#### gitlog.md
+this.dirname:  dest/paths
+this.filename: gitlog.md
+this.pagename: gitlog.md
+this.basename: gitlog
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dest/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
+this.extname:  
+this.ext:      
+
+#### roadmap.md
+this.dirname:  dest/paths
+this.filename: roadmap.md
+this.pagename: roadmap.md
+this.basename: roadmap
+this.extname:  
+this.ext:      
+
+#### travis.md
+this.dirname:  dest/paths
+this.filename: travis.md
+this.pagename: travis.md
+this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -1022,9 +1073,57 @@ page.basename: each-pages
 page.extname:  
 page.ext:      
 
+#### each-pages.md
+page.dirname:  dest/paths
+page.filename: each-pages.md
+page.pagename: each-pages.md
+page.basename: each-pages
+page.extname:  
+page.ext:      
+
+#### each-pages.md
+page.dirname:  dest/paths
+page.filename: each-pages.md
+page.pagename: each-pages.md
+page.basename: each-pages
+page.extname:  
+page.ext:      
+
+#### each-pages.md
+page.dirname:  dest/paths
+page.filename: each-pages.md
+page.pagename: each-pages.md
+page.basename: each-pages
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### each-pages.md
+dirname:       dest/paths
+filename:      each-pages.md
+pagename:      each-pages.md
+basename:      each-pages
+extname:       
+ext:           
+
+#### each-pages.md
+dirname:       dest/paths
+filename:      each-pages.md
+pagename:      each-pages.md
+basename:      each-pages
+extname:       
+ext:           
+
+#### each-pages.md
+dirname:       dest/paths
+filename:      each-pages.md
+pagename:      each-pages.md
+basename:      each-pages
+extname:       
+ext:           
 
 #### each-pages.md
 dirname:       dest/paths

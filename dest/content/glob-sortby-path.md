@@ -1862,7 +1862,7 @@ Example:
 ``` handlebars
 {{relative "from" "to"}}
 ```
-Usage:
+Template:
 ``` html
 <a href="{{relative "src" "dist"}}/assets/css/styles.css"></a> 
 ```
@@ -3263,10 +3263,10 @@ Usage:
 ```
 Example:
 ``` handlebars
-<a href="{{relative "src" "output"}}/assets/css/styles.css"></a> 
+<a href="{{relative "src" "dest"}}/assets/css/styles.css"></a> 
 
 ```
 Renders to: 
 ``` html
-<a href="../../output/assets/css/styles.css"></a> 
+<a href="../../assets/css/styles.css"></a> 
 ```

@@ -2,15 +2,15 @@
 
 # Travis CI Helper
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png?branch=master)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png?branch=master)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png?branch=dev)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png?branch=dev)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png?branch=wip-0.1.0)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png?branch=wip-0.1.0)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-#  [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png)](https://travis-ci.org/assemble/helper-lib-examples)
+#  [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
 
 ## Debug Info
@@ -21,7 +21,7 @@
   pageName: 'travis.md',
   pagename: 'travis.md',
   basename: 'travis',
-  src: 'src/templates/assemble/travis.md.hbs',
+  src: 'src/templates/readme/travis.md.hbs',
   dest: 'dest/inspect/travis.md',
   assets: '../assets',
   ext: '',

@@ -5,15 +5,15 @@ different contexts, and using different src-dest arrangements.
 
 # Travis CI Helper
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png?branch=master)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png?branch=master)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png?branch=dev)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png?branch=dev)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-# [helper-lib-examples v0.1.0](https://github.com/assemble/helper-lib-examples) [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png?branch=wip-0.1.0)](https://travis-ci.org/assemble/helper-lib-examples)
+# [handlebars-helpers-examples v0.1.0](https://github.com/assemble/handlebars-helpers-examples) [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png?branch=wip-0.1.0)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
-#  [![Build Status](https://travis-ci.org/assemble/helper-lib-examples.png)](https://travis-ci.org/assemble/helper-lib-examples)
+#  [![Build Status](https://travis-ci.org/assemble/handlebars-helpers-examples.png)](https://travis-ci.org/assemble/handlebars-helpers-examples)
 
 
 
@@ -27,11 +27,9 @@ different contexts, and using different src-dest arrangements.
 ../assets
 
 
-[authors](../assets) 
+[collections-categories](../assets) 
+[collections-tags](../assets) 
 [each-pages](../assets) 
-[opt](../assets) 
-[roadmap](../assets) 
-[travis](../assets) 
 [embed](../assets) 
 [jsfiddle](../assets) 
 [collections](../assets) 
@@ -61,6 +59,11 @@ different contexts, and using different src-dest arrangements.
 [extname](../assets) 
 [filename](../assets) 
 [relative](../assets) 
+[authors](../assets) 
+[gitlog](../assets) 
+[opt](../assets) 
+[roadmap](../assets) 
+[travis](../assets) 
 [hyphenate](../assets) 
 [occurences](../assets) 
 [replace](../assets) 
@@ -70,11 +73,19 @@ different contexts, and using different src-dest arrangements.
 
 ### {{#each pages}} "this" context
 
-#### authors.md
+#### collections-categories.md
 this.dirname:  dest/paths
-this.filename: authors.md
-this.pagename: authors.md
-this.basename: authors
+this.filename: collections-categories.md
+this.pagename: collections-categories.md
+this.basename: collections-categories
+this.extname:  
+this.ext:      
+
+#### collections-tags.md
+this.dirname:  dest/paths
+this.filename: collections-tags.md
+this.pagename: collections-tags.md
+this.basename: collections-tags
 this.extname:  
 this.ext:      
 
@@ -83,30 +94,6 @@ this.dirname:  dest/paths
 this.filename: each-pages.md
 this.pagename: each-pages.md
 this.basename: each-pages
-this.extname:  
-this.ext:      
-
-#### opt.md
-this.dirname:  dest/paths
-this.filename: opt.md
-this.pagename: opt.md
-this.basename: opt
-this.extname:  
-this.ext:      
-
-#### roadmap.md
-this.dirname:  dest/paths
-this.filename: roadmap.md
-this.pagename: roadmap.md
-this.basename: roadmap
-this.extname:  
-this.ext:      
-
-#### travis.md
-this.dirname:  dest/paths
-this.filename: travis.md
-this.pagename: travis.md
-this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -339,6 +326,46 @@ this.dirname:  dest/paths
 this.filename: relative.md
 this.pagename: relative.md
 this.basename: relative
+this.extname:  
+this.ext:      
+
+#### authors.md
+this.dirname:  dest/paths
+this.filename: authors.md
+this.pagename: authors.md
+this.basename: authors
+this.extname:  
+this.ext:      
+
+#### gitlog.md
+this.dirname:  dest/paths
+this.filename: gitlog.md
+this.pagename: gitlog.md
+this.basename: gitlog
+this.extname:  
+this.ext:      
+
+#### opt.md
+this.dirname:  dest/paths
+this.filename: opt.md
+this.pagename: opt.md
+this.basename: opt
+this.extname:  
+this.ext:      
+
+#### roadmap.md
+this.dirname:  dest/paths
+this.filename: roadmap.md
+this.pagename: roadmap.md
+this.basename: roadmap
+this.extname:  
+this.ext:      
+
+#### travis.md
+this.dirname:  dest/paths
+this.filename: travis.md
+this.pagename: travis.md
+this.basename: travis
 this.extname:  
 this.ext:      
 
@@ -698,9 +725,57 @@ page.basename: travis
 page.extname:  
 page.ext:      
 
+#### travis.md
+page.dirname:  dest/paths
+page.filename: travis.md
+page.pagename: travis.md
+page.basename: travis
+page.extname:  
+page.ext:      
+
+#### travis.md
+page.dirname:  dest/paths
+page.filename: travis.md
+page.pagename: travis.md
+page.basename: travis
+page.extname:  
+page.ext:      
+
+#### travis.md
+page.dirname:  dest/paths
+page.filename: travis.md
+page.pagename: travis.md
+page.basename: travis
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### travis.md
+dirname:       dest/paths
+filename:      travis.md
+pagename:      travis.md
+basename:      travis
+extname:       
+ext:           
+
+#### travis.md
+dirname:       dest/paths
+filename:      travis.md
+pagename:      travis.md
+basename:      travis
+extname:       
+ext:           
+
+#### travis.md
+dirname:       dest/paths
+filename:      travis.md
+pagename:      travis.md
+basename:      travis
+extname:       
+ext:           
 
 #### travis.md
 dirname:       dest/paths

@@ -4,6 +4,7 @@
 
 ## URL Resolve
 
+
 ``` html
 <a href="\{{url_resolve "http://example.com/one" "/two"}}"></a> 
 ```
@@ -11,52 +12,4 @@ Renders to:
 
 ``` html
 <a href="{{url_resolve "http://example.com/one" "/two"}}"></a> 
-```
-
-## URL Parse
-
-### default
-Take a URL string, and return an object.
-
-Example: 
-
-``` html
-\{{url_parse "http://example.com/one"}} 
-```
-Renders to:
-``` html
-{{url_parse "http://example.com/one"}} 
-```
-
-### second param `yaml`
-
-``` html
-\{{url_parse "http://foo.com/bar/baz?key=value" "yaml"}}
-```
-Renders to:
-``` html
-{{url_parse "http://foo.com/bar/baz?key=value" "yaml"}}
-```
-
-### second param `json`
-``` html
-\{{url_parse "http://foo.com/bar/baz?key=value" "json"}}
-```
-Renders to:
-``` html
-{{url_parse "http://foo.com/bar/baz?key=value" "json"}}
-```
-
-### querystring
-Pass true as the third argument to also parse the query string using the querystring module. Defaults to false.
-
-Pass true as the third argument to treat `//foo/bar` as `{ host: 'foo', pathname: '/bar' }` rather than `{ pathname: '//foo/bar' }`. Defaults to false.
-
-``` html
-\{{url_parse "http://user:pass@host.com:8080/p/a/t/h?query=string#hash" "json" "true"}}
-```
-
-Renders to:
-``` html
-{{url_parse "http://user:pass@host.com:8080/p/a/t/h?query=string#hash" "json" "true"}}
 ```

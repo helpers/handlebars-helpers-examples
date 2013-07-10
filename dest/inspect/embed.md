@@ -185,12 +185,12 @@ Usage:
 &#x60;&#x60;&#x60;
 Example:
 &#x60;&#x60;&#x60; handlebars
-<a href="{{relative "src" "output"}}/assets/css/styles.css"></a> 
+<a href="{{relative "src" "dest"}}/assets/css/styles.css"></a> 
 
 &#x60;&#x60;&#x60;
 Renders to: 
 &#x60;&#x60;&#x60; html
-<a href="../../output/assets/css/styles.css"></a> 
+<a href="../../assets/css/styles.css"></a> 
 &#x60;&#x60;&#x60;
 ```
  
@@ -348,12 +348,12 @@ Usage:
 &#x60;&#x60;&#x60;
 Example:
 &#x60;&#x60;&#x60; handlebars
-<a href="{{relative "src" "output"}}/assets/css/styles.css"></a> 
+<a href="{{relative "src" "dest"}}/assets/css/styles.css"></a> 
 
 &#x60;&#x60;&#x60;
 Renders to: 
 &#x60;&#x60;&#x60; html
-<a href="../../output/assets/css/styles.css"></a> 
+<a href="../../assets/css/styles.css"></a> 
 &#x60;&#x60;&#x60;
 ```
  

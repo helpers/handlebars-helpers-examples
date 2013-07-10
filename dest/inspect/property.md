@@ -13,11 +13,11 @@
 }
 **Project Name**:        
 {
-  "name": "helper-lib-examples"
+  "name": "handlebars-helpers-examples"
 }
 **Project Description**: 
 {
-  "description": "Shows how to use helpers from helper-lib with Assemble."
+  "description": "Shows how to use helpers from handlebars-helpers with Assemble."
 }
 
 ## Debug Info

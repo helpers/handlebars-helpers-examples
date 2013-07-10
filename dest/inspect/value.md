@@ -8,9 +8,9 @@
 Get values from `package.json`
 
 **Project Version**:     v0.1.0
-**Project Name**:        helper-lib-examples
-**Project Description**: Shows how to use helpers from helper-lib with Assemble.
-**Project keywords**:    assemble,helpers,helper,helper-lib,filters,handlebars helper,handlebars helpers,handlebars,templates
+**Project Name**:        handlebars-helpers-examples
+**Project Description**: Shows how to use helpers from handlebars-helpers with Assemble.
+**Project keywords**:    assemble,filters,handlebars helper,handlebars helpers,handlebars,handlebars-helpers,helper,helpers,templates
 **Project devDependencies**:    
 
 

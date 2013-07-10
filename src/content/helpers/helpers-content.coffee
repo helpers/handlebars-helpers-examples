@@ -5,31 +5,35 @@ Utils = require '../utils/utils'
 grunt = require 'grunt'
 _     = require 'lodash'
 
-
+###
 # NOTE: Most of these helpers are experimental. 
 # Please do not use in production. 
 
 # Copy: copies src file from A to B. USE WITH CAUTION!!! Usage: {{copy [a] [b]}}
+###
 module.exports.copy = copy = (a, b) ->
   Utils.copyFile(a, b)
-
+###
 # Glob: reads in data from a markdown file, and uses the first heading
 # as a section heading, and then copies the rest of the content inline.
 # Usage: {{{ glob [file] }}
+###
 module.exports.glob = glob = (src, compare_fn) ->
   content = Utils.globFiles(src, compare_fn)
   Utils.safeString(content)
-
+###
 # Experimental helper to build a Table of Contents. Currently
 # builds a list from the headers found in markdown files.
+###
 module.exports.toc = toc = (src) ->
   content = grunt.file.expand(src)
   .map(grunt.file.read).join('')
   .match(/^(#{1,6})\s*(.*?)\s*#*\s*(?:\n|$)/gm).join('')
   .replace(/^(#{1,6})\s*(.*?)\s*#*\s*(?:\n|$)/gm, '$1 [$2](#' + '$2' + ')\n')
   Utils.safeString(content)
-
+###
 # Define Section
+###
 module.exports.defineSection = defineSection = (section, options) ->
   if Handlebars.sections
     Handlebars.sections[section] = options.fn(this)
@@ -42,8 +46,9 @@ module.exports.renderSection = renderSection = (section, options) ->
   else
     content = options.fn this
   Utils.safeString content
-
+###
 # Usage: {{ include [partial] }}
+###
 module.exports.include = include = (template, options) ->
   partial = Handlebars.partials[template]
   if (typeof partial is "string")
@@ -52,13 +57,14 @@ module.exports.include = include = (template, options) ->
   return Utils.safeString('Partial **' + template + '** not found.')  unless partial
   context = _.extend({}, this, options.hash)
   Utils.safeString partial(context)
-
+###
 # Adds support for passing arguments to partials. Arguments are merged with 
 # the context for rendering only (non destructive). 
 # Use `:token` syntax to replace parts of the template path. 
 # Tokens are replaced in order.
 # USAGE: {{partial 'path.to.partial' context=newContext foo='bar' }}
 # USAGE: {{partial 'path.:1.:2' replaceOne replaceTwo foo='bar' }}
+###
 module.exports.partial = partial = (template) ->
   values = Array::slice.call(arguments, 1)
   opts = values.pop()
@@ -76,6 +82,7 @@ module.exports.partial = partial = (template) ->
   context = _.extend({}, opts.context or this, _.omit(opts, "context", "fn", "inverse"))
   Utils.safeString partial(context)
 
+###
 # module.exports.toc = toc = (src) ->
 #   content = grunt.file.expand(src)
 #   .map(grunt.file.read)
@@ -85,13 +92,16 @@ module.exports.partial = partial = (template) ->
 #   headings = content.match(/^(#{1,6})\s*(.*?)\s*#*\s*(?:\n|$)/gm).join('\n')
 #     .replace(/^(#{1,6})\s*(.*?)\s*#*\s*(?:\n|$)/gm, '$1 [$2]($2)\n')
 #   Utils.safeString(headings)
+###
 
+###
 # module.exports.toc = toc = (src) ->
 #   content = grunt.file.expand(src)
 #   .map(grunt.file.read).join('')
 #   .match(/^(#{1,6})\s*(.*?)\s*#*\s*(?:\n|$)/gm).join('')
 #   .replace(/^(#{1,6})\s*(.*?)\s*#*\s*(?:\n|$)/gm, '$1 [$2](#' + '$2' + ')\n')
 #   Utils.safeString(content)
+###
 
 
 module.exports.extract = extract = (src, i) ->
@@ -100,11 +110,13 @@ module.exports.extract = extract = (src, i) ->
   matches = Utils.getMatches(content, helpers, i)
   Utils.safeString(matches)
 
+###
 # module.exports.match = match = (src) ->
 #   content = grunt.file.expand(src).map(grunt.file.read).join('')
 #   helpers = /(Handlebars.registerHelper\s")(.*",\s)(.*\s)/g
 #   match = helpers.exec(content)
 #   Utils.safeString(match[2])
+###
 
 module.exports.match = match = (src) ->
   helpers = /(?:  Handlebars.registerHelper \")(?:.*",\s)(.*\s)/g
@@ -127,14 +139,15 @@ module.exports.listHelpers = listHelpers = (src) ->
   Utils.safeString(content)
 
 
-
+###
     # helperList = ["a", "b", "c", "d", "e"]
     # documentedList = ["a", "c"]
     # undocumentedList = []
     # helperList.forEach (helper) ->
     #   undocumentedList.push helper  if _.contains(documentedList, helper) is false
+###
 
-
+###
 # module.exports.listHelpers = listHelpers = (src) ->
 #   banner = '# New DOCUMENT\n'
   
@@ -151,7 +164,7 @@ module.exports.listHelpers = listHelpers = (src) ->
 
   # ).join('\n# NEW FILE \n')
   # finalOutput = Utils.safeString("# Start\n" + content)
-
+###
 
 
 module.exports.sections = {}
