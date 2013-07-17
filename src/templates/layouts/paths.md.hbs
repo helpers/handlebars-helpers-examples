@@ -1,6 +1,6 @@
 # {{#if title}}{{title}}{{else}}{{this.filename}} output{{/if}}
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 {{> body }}
@@ -20,6 +20,7 @@ different contexts, and using different src-dest arrangements.
 
 
 ### \{{#each pages}} "this" context
+
 {{#each pages}}
 #### {{this.filename}}
 this.dirname:  {{this.dirname}}
