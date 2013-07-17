@@ -1,7 +1,7 @@
 {
   "name": "handlebars-helpers-examples",
   "description": "Shows how to use helpers from handlebars-helpers with Assemble.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/assemble/handlebars-helpers-examples",
   "author": {
     "name": "Jon Schlinkert"

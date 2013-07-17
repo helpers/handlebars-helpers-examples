@@ -1,21 +1,11 @@
 # README Table of Contents
 
-# [helper-lib-examples [![Build Status](https://secure.travis-ci.org/assemble/helper-lib-examples.png?branch=master)](http://travis-ci.org/assemble/helper-lib-examples)](#helper-lib-examples [![Build Status](https://secure.travis-ci.org/assemble/helper-lib-examples.png?branch=master)](http://travis-ci.org/assemble/helper-lib-examples))
+# [handlebars-helpers-examples](#handlebars-helpers-examples)
 ## [Getting Started](#Getting Started)
 ## [The helpers](#The helpers)
 ## [The "assemble" task](#The "assemble" task)
-### [Overview](#Overview)
-#### [YAML Front-Matter](#YAML Front-Matter)
-### [Options](#Options)
-#### [flatten](#flatten)
-#### [layout](#layout)
-#### [partials](#partials)
-#### [assets](#assets)
-#### [data](#data)
-### [Usage Examples](#Usage Examples)
 ## [Authors](#Authors)
 ## [Contributing](#Contributing)
-## [Release History](#Release History)
 
 
 
