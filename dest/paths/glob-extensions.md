@@ -1,6 +1,6 @@
 # Globbing helper
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 
@@ -247,6 +247,7 @@ With a reference later in the document defining the URL location:
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -268,6 +269,7 @@ With a reference later in the document defining the URL location:
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -458,6 +460,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -945,9 +955,25 @@ page.basename: glob-extensions
 page.extname:  
 page.ext:      
 
+#### glob-extensions.md
+page.dirname:  dest/paths
+page.filename: glob-extensions.md
+page.pagename: glob-extensions.md
+page.basename: glob-extensions
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### glob-extensions.md
+dirname:       dest/paths
+filename:      glob-extensions.md
+pagename:      glob-extensions.md
+basename:      glob-extensions
+extname:       
+ext:           
 
 #### glob-extensions.md
 dirname:       dest/paths

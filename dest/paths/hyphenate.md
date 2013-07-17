@@ -1,6 +1,6 @@
 # hyphenate.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 
@@ -48,6 +48,7 @@ make-this-all-dashified
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -69,6 +70,7 @@ make-this-all-dashified
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -259,6 +261,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -746,9 +756,25 @@ page.basename: hyphenate
 page.extname:  
 page.ext:      
 
+#### hyphenate.md
+page.dirname:  dest/paths
+page.filename: hyphenate.md
+page.pagename: hyphenate.md
+page.basename: hyphenate
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### hyphenate.md
+dirname:       dest/paths
+filename:      hyphenate.md
+pagename:      hyphenate.md
+basename:      hyphenate
+extname:       
+ext:           
 
 #### hyphenate.md
 dirname:       dest/paths

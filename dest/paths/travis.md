@@ -1,6 +1,6 @@
 # travis.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 # Travis CI Helper
@@ -51,6 +51,7 @@ different contexts, and using different src-dest arrangements.
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -72,6 +73,7 @@ different contexts, and using different src-dest arrangements.
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -262,6 +264,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -749,9 +759,25 @@ page.basename: travis
 page.extname:  
 page.ext:      
 
+#### travis.md
+page.dirname:  dest/paths
+page.filename: travis.md
+page.pagename: travis.md
+page.basename: travis
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### travis.md
+dirname:       dest/paths
+filename:      travis.md
+pagename:      travis.md
+basename:      travis
+extname:       
+ext:           
 
 #### travis.md
 dirname:       dest/paths

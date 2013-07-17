@@ -1,6 +1,6 @@
 # jsFiddle Helper
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 
@@ -55,6 +55,7 @@ Usage: {{ jsfiddle "id" "tabs" "skin" "height" "width" }}
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -76,6 +77,7 @@ Usage: {{ jsfiddle "id" "tabs" "skin" "height" "width" }}
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -266,6 +268,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -753,9 +763,25 @@ page.basename: jsfiddle
 page.extname:  
 page.ext:      
 
+#### jsfiddle.md
+page.dirname:  dest/paths
+page.filename: jsfiddle.md
+page.pagename: jsfiddle.md
+page.basename: jsfiddle
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### jsfiddle.md
+dirname:       dest/paths
+filename:      jsfiddle.md
+pagename:      jsfiddle.md
+basename:      jsfiddle
+extname:       
+ext:           
 
 #### jsfiddle.md
 dirname:       dest/paths

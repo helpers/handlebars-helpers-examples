@@ -1,6 +1,6 @@
 # undocumented.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 switch,readme-title,travis-badge,dtdd,travis,changelog,roadmap,and,gt,gte,if_eq,if_gt,if_gteq,if_lt,if_lteq,ifAny,is,isnt,lt,lte,or,unless_eq,unless_gt,unless_gteq,unless_lt,unless_lteq,extract,match,listHelpers,copy,glob,toc,defineSection,renderSection,include,partial,opt,formatDate,now,timeago,exticon,glyphicon,icon,section,push,link,css,js,ul,ol,DOCTYPE,inflect,ordinalize,helperMissing,blockHelperMissing,expandMapping,expandYAML,expandJSON,log,debug,inspect,markdown,md,add,subtract,divide,multiply,floor,ceil,round,sum,default,noop,toFixed,toPrecision,toExponential,toInt,toFloat,toAbbr,addCommas,dirname,relative,basename,filename,extname,embed,gist,jsfiddle,capitalizeEach,capitalizeFirst,center,dashify,ellipsis,formatPhoneNumber,hyphenate,lowercase,occurrences,replace,reverse,safeString,sentence,titleize,truncate,uppercase,url_parse,url_resolve,stripQuerystring,encodeURI,decodeURI,
@@ -41,6 +41,7 @@ switch,readme-title,travis-badge,dtdd,travis,changelog,roadmap,and,gt,gte,if_eq,
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -62,6 +63,7 @@ switch,readme-title,travis-badge,dtdd,travis,changelog,roadmap,and,gt,gte,if_eq,
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -252,6 +254,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -739,9 +749,25 @@ page.basename: undocumented
 page.extname:  
 page.ext:      
 
+#### undocumented.md
+page.dirname:  dest/paths
+page.filename: undocumented.md
+page.pagename: undocumented.md
+page.basename: undocumented
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### undocumented.md
+dirname:       dest/paths
+filename:      undocumented.md
+pagename:      undocumented.md
+basename:      undocumented
+extname:       
+ext:           
 
 #### undocumented.md
 dirname:       dest/paths

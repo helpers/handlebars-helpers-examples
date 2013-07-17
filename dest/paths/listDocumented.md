@@ -1,6 +1,6 @@
 # listDocumented.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 embed,gist,jsfiddle,first,withFirst,last,withLast,after,withAfter,before,withBefore,join,sort,withSort,length,lengthEqual,empty,any,inArray,eachIndex,eachProperty,is,if_eq,isnt,or,and,unless_eq,if_gt,gt,unless_gt,if_gteq,gte,unless_gteq,lt,lte,unless_lt,unless_lteq,formatDate,now,timeago,include,glob,copy,doctype,blockquote,timeline,exticon,ul,ol,br,inflect,ordinalize,log,debug,expandJSON,expandYAML,md,markdown,add,subtract,divide,multiply,floor,ceil,round,sum,default,noop,toFixed,toPrecision,toExponential,toInt,toFloat,toAbbr,addCommas,relative,extname,dirname,authors,travis,travis-badge,changelog,embed,authors,travis,travis-badge,changelog,jsfiddle,occurrences,hyphenate,dashify,lowercase,uppercase,capitalizeFirst,capitalizeEach,titleize,sentence,reverse,truncate,center,formatPhoneNumber,url_resolve,url_parse
@@ -41,6 +41,7 @@ embed,gist,jsfiddle,first,withFirst,last,withLast,after,withAfter,before,withBef
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -62,6 +63,7 @@ embed,gist,jsfiddle,first,withFirst,last,withLast,after,withAfter,before,withBef
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -252,6 +254,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -739,9 +749,25 @@ page.basename: listDocumented
 page.extname:  
 page.ext:      
 
+#### listDocumented.md
+page.dirname:  dest/paths
+page.filename: listDocumented.md
+page.pagename: listDocumented.md
+page.basename: listDocumented
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### listDocumented.md
+dirname:       dest/paths
+filename:      listDocumented.md
+pagename:      listDocumented.md
+basename:      listDocumented
+extname:       
+ext:           
 
 #### listDocumented.md
 dirname:       dest/paths

@@ -7,7 +7,7 @@
   "version": "0.1.0",
   "homepage": "https://github.com/assemble/handlebars-helpers-examples",
   "author": {
-    "name": "assemble"
+    "name": "Jon Schlinkert"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,9 @@
   "devDependencies": {
     "assemble": "~0.4.0",
     "grunt-contrib-clean": "~0.4.0",
-    "grunt": "~0.4.1"
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt": "~0.4.1",
+    "minimatch": "~0.2.12"
   },
   "keywords": [
     "assemble",

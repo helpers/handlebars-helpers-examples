@@ -1,0 +1,149 @@
+<p>Note that NO TITLE WILL BE RENDERED if there isn't a title defined in the YFM of the "current" page.</p>
+
+<ul>
+  
+  <li><a href="#">Categories</a></li>
+  <li><a href="#">Tags</a></li>
+  <li><a href="#">Pages</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">Pages (Collection) Variables</a></li>
+  <li><a href="#">Embed Helper</a></li>
+  <li><a href="#">Gist Helper</a></li>
+  <li><a href="#">jsFiddle Helper</a></li>
+  <li><a href="#">Associative arrays</a></li>
+  <li><a href="#">File Helpers</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">Globbing helper</a></li>
+  <li><a href="#">Globbing helper</a></li>
+  <li><a href="#">Globbing helper</a></li>
+  <li><a href="#">Globbing helper</a></li>
+  <li><a href="#">Globbing helper</a></li>
+  <li><a href="#">Globbing helper</a></li>
+  <li><a href="#">Include</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">Partial Helper</a></li>
+  <li><a href="#">Push and Section helpers</a></li>
+  <li><a href="#">Push and Section helpers</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">LESS CSS</a></li>
+  <li><a href="#">Markdown Helpers</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">Alert helper</a></li>
+  <li><a href="#">CSS helper</a></li>
+  <li><a href="#">exticon Helper</a></li>
+  <li><a href="#">Script tag helpers</a></li>
+  <li><a href="#">Link Helper</a></li>
+  <li><a href="#">List Helpers</a></li>
+  <li><a href="#">Expand helpers</a></li>
+  <li><a href="#">Inspect Helper</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">Stringify Helper</a></li>
+  <li><a href="#">property helper</a></li>
+  <li><a href="#">Stringify Helper</a></li>
+  <li><a href="#">Value Helpers</a></li>
+  <li><a href="#">Basic</a></li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Partials</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">Success! Your page was assembled!</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">basename</a></li>
+  <li><a href="#">Path Helpers</a></li>
+  <li><a href="#">extname</a></li>
+  <li><a href="#">filename</a></li>
+  <li><a href="#">Relative Path Helpers</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#">Opt helper</a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+</ul>
+
+## URL Parse 
+
+### default
+Take a URL string, and return an object.
+
+Example: 
+
+``` html
+{{url_parse "http://example.com/one"}} 
+```
+Renders to:
+``` html
+{
+  "protocol": "http:",
+  "slashes": true,
+  "auth": null,
+  "host": "example.com",
+  "port": null,
+  "hostname": "example.com",
+  "hash": null,
+  "search": null,
+  "query": null,
+  "pathname": "/one",
+  "path": "/one",
+  "href": "http://example.com/one"
+} 
+```
+
+### second param `yaml`
+
+``` html
+{{url_parse "http://foo.com/bar/baz?key=value" "yaml"}}
+```
+Renders to:
+``` html
+protocol: "http:"
+slashes: true
+auth: null
+host: "foo.com"
+port: null
+hostname: "foo.com"
+hash: null
+search: "?key=value"
+query: "key=value"
+pathname: "/bar/baz"
+path: "/bar/baz?key=value"
+href: "http://foo.com/bar/baz?key=value"
+parse: 
+format: 
+resolve: 
+resolveObject: 
+parseHost: 
+```
+
+### second param `json`
+``` html
+{{url_parse "http://foo.com/bar/baz?key=value" "json"}}
+```
+Renders to:
+``` html
+{"protocol":"http:","slashes":true,"auth":null,"host":"foo.com","port":null,"hostname":"foo.com","hash":null,"search":"?key=value","query":"key=value","pathname":"/bar/baz","path":"/bar/baz?key=value","href":"http://foo.com/bar/baz?key=value"}
+```
+
+### querystring
+Pass true as the third argument to also parse the query string using the querystring module. Defaults to false.
+
+Pass true as the third argument to treat `//foo/bar` as `{ host: 'foo', pathname: '/bar' }` rather than `{ pathname: '//foo/bar' }`. Defaults to false.
+
+``` html
+{{url_parse "http://user:pass@host.com:8080/p/a/t/h?query=string#hash" "json" "true"}}
+```
+
+Renders to:
+``` html
+{"protocol":"http:","slashes":true,"auth":"user:pass","host":"host.com:8080","port":"8080","hostname":"host.com","hash":"#hash","search":"?query=string","query":"query=string","pathname":"/p/a/t/h","path":"/p/a/t/h?query=string","href":"http://user:pass@host.com:8080/p/a/t/h?query=string#hash"}
+```

@@ -4,148 +4,22 @@
 The "sorting" examples are placeholders for a second parameter that is on the way.
 
 ## Sort by nothing 
-#### {{toFixed}}
-_Returns exactly `digits` after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length._
-
-Parameters: digits `int` - The number of digits to appear after the decimal point. (Optional)
-
-Data:
-``` js
-value = 5.53231
-```
-
-Template:
-``` html
-{{toFixed value 3}}
-```
-
-Renders to:
-```
-5.532
-```
-
-#### {{toPrecision}}
-_Returns the number in fixed-point or exponential notation rounded to `precision` significant digits._
-
-Parameters: precision `int` - The number of digits. If omitted, it returns the entire number (without any formatting). (Optional)
-
-Data:
-``` js
-value = 555.322
-```
-
-Template:
-``` html
-{{toPrecision value 4}}
-```
-
-Renders to:
-```
-555.3
-```
-
-#### {{toExponential}}
-_Returns the number in exponential notation with one digit before the decimal point, rounded to `fractions` digits after the decimal point._
-
-Parameters: fractions `int` - An integer specifying the number of digits after the decimal point. (Optional)
-
-Data:
-``` js
-value = 5
-```
-
-Template:
-``` html
-{{toExponential value 5}}
-```
-
-Renders to:
-```
-5.00000e+0
-```
-
-#### {{toInt}}
-_Returns an integer._
-
-Parameters: `none`
-
-Data:
-``` js
-value = '22.2abc'
-```
-
-Template:
-``` html
-{{toInt value}}
-```
-
-Renders to:
-```
-22
-```
-
-#### {{toFloat}}
-_Returns a floating point number._
-
-Parameters: `none`
-
-Data:
-``` js
-value = '22.2abc'
-```
-
-Template:
-``` html
-{{toFloat value}}
-```
-
-Renders to:
-```
-22.2
-```
-
-#### {{toAbbr}}
-_Returns the number in abbreviation formats based on a value. The number is rounded to a particular decimal place._
-
-Parameters: digits `int` - The number of digits to appear after the decimal point. (Optional)
-
-Default: `2`
-
-Data:
-``` js
-value = 123456789
-```
-
-Template:
-``` html
-{{toAbbr value}}
-```
-
-Renders to:
-```
-123.457m
-```
-
-#### {{addCommas}}
-_Adds commas to a number._
-
-Parameters: `none`
-
-Data:
-``` js
-value = 2222222
-```
-
-Template:
-``` html
-{{addCommas value}}
-```
-
-Renders to:
-```
-2,222,222
-```
 ## Blockquotes
+
+Nunc vestibulum leo a lorem pulvinar ut convallis odio iaculis. Sed a sapien nec libero semper scelerisque at eget nisl. Vestibulum urna ligula, facilisis sed blandit nec, placerat eget augue. Nulla ultrices hendrerit mauris, quis hendrerit mi bibendum eget. Etiam quam justo, sollicitudin in tempus ac, tristique eget elit. Vivamus fermentum libero id magna mollis eleifend. Integer blandit libero in est hendrerit sollicitudin. Pellentesque ac orci id magna ullamcorper laoreet ut vitae nisl. 
+
+> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
+
+Aliquam erat volutpat. Ut imperdiet condimentum nisi non aliquet. Vivamus sit amet consectetur sapien. Phasellus varius interdum urna, eget mattis justo faucibus vel. Aliquam elementum, magna ut pretium molestie, erat orci eleifend tellus, sit amet rhoncus arcu odio eu sem. Proin lobortis mi ac ante luctus porta. Mauris sit amet vestibulum orci.
+
+> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
+>> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+
+Aliquam ut augue turpis, eget mattis nibh. Suspendisse urna mauris, pharetra vitae laoreet non, tempor sit amet metus. Donec risus diam, tincidunt id elementum sed, ultrices id neque. Curabitur sed nisl non sem gravida malesuada et dapibus justo. Nullam in sagittis magna. Aliquam erat volutpat. Suspendisse potenti. Fusce id posuere orci. In sed vestibulum dolor. Phasellus volutpat eleifend purus sed vestibulum. Ut dolor massa, volutpat nec elementum vel, vestibulum in mi. Donec fringilla dignissim risus.
+
+# One
+
+## Getting Started
 
 Nunc vestibulum leo a lorem pulvinar ut convallis odio iaculis. Sed a sapien nec libero semper scelerisque at eget nisl. Vestibulum urna ligula, facilisis sed blandit nec, placerat eget augue. Nulla ultrices hendrerit mauris, quis hendrerit mi bibendum eget. Etiam quam justo, sollicitudin in tempus ac, tristique eget elit. Vivamus fermentum libero id magna mollis eleifend. Integer blandit libero in est hendrerit sollicitudin. Pellentesque ac orci id magna ullamcorper laoreet ut vitae nisl. 
 
@@ -1834,21 +1708,147 @@ No title available.
 #### {{noop}}
 
 TODO...
-# One
+#### {{toFixed}}
+_Returns exactly `digits` after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length._
 
-## Getting Started
+Parameters: digits `int` - The number of digits to appear after the decimal point. (Optional)
 
-Nunc vestibulum leo a lorem pulvinar ut convallis odio iaculis. Sed a sapien nec libero semper scelerisque at eget nisl. Vestibulum urna ligula, facilisis sed blandit nec, placerat eget augue. Nulla ultrices hendrerit mauris, quis hendrerit mi bibendum eget. Etiam quam justo, sollicitudin in tempus ac, tristique eget elit. Vivamus fermentum libero id magna mollis eleifend. Integer blandit libero in est hendrerit sollicitudin. Pellentesque ac orci id magna ullamcorper laoreet ut vitae nisl. 
+Data:
+``` js
+value = 5.53231
+```
 
-> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
+Template:
+``` html
+{{toFixed value 3}}
+```
 
-Aliquam erat volutpat. Ut imperdiet condimentum nisi non aliquet. Vivamus sit amet consectetur sapien. Phasellus varius interdum urna, eget mattis justo faucibus vel. Aliquam elementum, magna ut pretium molestie, erat orci eleifend tellus, sit amet rhoncus arcu odio eu sem. Proin lobortis mi ac ante luctus porta. Mauris sit amet vestibulum orci.
+Renders to:
+```
+5.532
+```
 
-> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
->> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+#### {{toPrecision}}
+_Returns the number in fixed-point or exponential notation rounded to `precision` significant digits._
 
-Aliquam ut augue turpis, eget mattis nibh. Suspendisse urna mauris, pharetra vitae laoreet non, tempor sit amet metus. Donec risus diam, tincidunt id elementum sed, ultrices id neque. Curabitur sed nisl non sem gravida malesuada et dapibus justo. Nullam in sagittis magna. Aliquam erat volutpat. Suspendisse potenti. Fusce id posuere orci. In sed vestibulum dolor. Phasellus volutpat eleifend purus sed vestibulum. Ut dolor massa, volutpat nec elementum vel, vestibulum in mi. Donec fringilla dignissim risus.
+Parameters: precision `int` - The number of digits. If omitted, it returns the entire number (without any formatting). (Optional)
 
+Data:
+``` js
+value = 555.322
+```
+
+Template:
+``` html
+{{toPrecision value 4}}
+```
+
+Renders to:
+```
+555.3
+```
+
+#### {{toExponential}}
+_Returns the number in exponential notation with one digit before the decimal point, rounded to `fractions` digits after the decimal point._
+
+Parameters: fractions `int` - An integer specifying the number of digits after the decimal point. (Optional)
+
+Data:
+``` js
+value = 5
+```
+
+Template:
+``` html
+{{toExponential value 5}}
+```
+
+Renders to:
+```
+5.00000e+0
+```
+
+#### {{toInt}}
+_Returns an integer._
+
+Parameters: `none`
+
+Data:
+``` js
+value = '22.2abc'
+```
+
+Template:
+``` html
+{{toInt value}}
+```
+
+Renders to:
+```
+22
+```
+
+#### {{toFloat}}
+_Returns a floating point number._
+
+Parameters: `none`
+
+Data:
+``` js
+value = '22.2abc'
+```
+
+Template:
+``` html
+{{toFloat value}}
+```
+
+Renders to:
+```
+22.2
+```
+
+#### {{toAbbr}}
+_Returns the number in abbreviation formats based on a value. The number is rounded to a particular decimal place._
+
+Parameters: digits `int` - The number of digits to appear after the decimal point. (Optional)
+
+Default: `2`
+
+Data:
+``` js
+value = 123456789
+```
+
+Template:
+``` html
+{{toAbbr value}}
+```
+
+Renders to:
+```
+123.457m
+```
+
+#### {{addCommas}}
+_Adds commas to a number._
+
+Parameters: `none`
+
+Data:
+``` js
+value = 2222222
+```
+
+Template:
+``` html
+{{addCommas value}}
+```
+
+Renders to:
+```
+2,222,222
+```
 Path helpers are [node.js](http://nodejs.org/api/path.html) utilities for handling and transforming file paths. As with node.js: 
 
 > "these helpers perform only string transformations. The file system is not consulted to check whether paths are valid."

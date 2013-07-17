@@ -1,6 +1,6 @@
 # Value Helpers
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 
@@ -52,6 +52,7 @@ Get values from `package.json`
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -73,6 +74,7 @@ Get values from `package.json`
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -263,6 +265,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -750,9 +760,25 @@ page.basename: value
 page.extname:  
 page.ext:      
 
+#### value.md
+page.dirname:  dest/paths
+page.filename: value.md
+page.pagename: value.md
+page.basename: value
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### value.md
+dirname:       dest/paths
+filename:      value.md
+pagename:      value.md
+basename:      value
+extname:       
+ext:           
 
 #### value.md
 dirname:       dest/paths

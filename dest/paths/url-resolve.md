@@ -1,6 +1,6 @@
 # url-resolve.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 # Node URL Helpers
@@ -55,6 +55,7 @@ Renders to:
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -76,6 +77,7 @@ Renders to:
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -266,6 +268,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -753,9 +763,25 @@ page.basename: url-resolve
 page.extname:  
 page.ext:      
 
+#### url-resolve.md
+page.dirname:  dest/paths
+page.filename: url-resolve.md
+page.pagename: url-resolve.md
+page.basename: url-resolve
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### url-resolve.md
+dirname:       dest/paths
+filename:      url-resolve.md
+pagename:      url-resolve.md
+basename:      url-resolve
+extname:       
+ext:           
 
 #### url-resolve.md
 dirname:       dest/paths

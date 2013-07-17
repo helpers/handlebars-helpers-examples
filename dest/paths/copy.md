@@ -1,12 +1,12 @@
 # File Helpers
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 
 # File Helpers
 
-Copy from "A to B": **true**
+Copy from "A to B": ****
 
 
 
@@ -44,6 +44,7 @@ Copy from "A to B": **true**
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -65,6 +66,7 @@ Copy from "A to B": **true**
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -255,6 +257,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -742,9 +752,25 @@ page.basename: copy
 page.extname:  
 page.ext:      
 
+#### copy.md
+page.dirname:  dest/paths
+page.filename: copy.md
+page.pagename: copy.md
+page.basename: copy
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### copy.md
+dirname:       dest/paths
+filename:      copy.md
+pagename:      copy.md
+basename:      copy
+extname:       
+ext:           
 
 #### copy.md
 dirname:       dest/paths

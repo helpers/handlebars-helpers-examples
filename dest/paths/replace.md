@@ -1,6 +1,6 @@
 # replace.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 ## Replace
@@ -57,6 +57,7 @@ replace a for b
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -78,6 +79,7 @@ replace a for b
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -268,6 +270,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -755,9 +765,25 @@ page.basename: replace
 page.extname:  
 page.ext:      
 
+#### replace.md
+page.dirname:  dest/paths
+page.filename: replace.md
+page.pagename: replace.md
+page.basename: replace
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### replace.md
+dirname:       dest/paths
+filename:      replace.md
+pagename:      replace.md
+basename:      replace
+extname:       
+ext:           
 
 #### replace.md
 dirname:       dest/paths

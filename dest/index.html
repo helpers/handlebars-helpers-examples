@@ -55,14 +55,14 @@
 </blockquote>
 <h2>Getting Started</h2>
 <ul>
-<li><strong><a href="https://github.com/assemble/assemble-examples-basic/archive/master.zip">Download this project</a></strong> and unzip it into a new folder.  </li>
+<li><strong><a href="https://github.com/assemble/assemble-examples-basic/archive/master.zip">Download this project</a></strong> and unzip it into a new folder.</li>
 <li>In the project folder, run <code>npm install</code> to install <a href="https://github.com/assemble/assemble/">Assemble</a>, <a href="http://gruntjs.com/">Grunt</a> and any other dependencies.</li>
 <li>Once the dependencies are installed you may run <code>grunt assemble</code> to build the example project.</li>
 </ul>
-<p>If you haven&#39;t used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a>, as well as install and use Grunt plugins. </p>
+<p>If you haven&#39;t used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a>, as well as install and use Grunt plugins.</p>
 <h2>The helpers</h2>
 <p><a href="https://github.com/assemble/helper-lib">helper-lib</a> is the default helper library for <a href="https://github.com/assemble/assemble/">Assemble</a>, a Grunt plugin that makes it dead simple to build modular sites and components from reusable <strong>templates</strong> and <strong>data</strong>. The helpers in this project can be used with our without Assemble.</p>
-<p>If you want to see the types of helpers that are included, you can read over the Table of Contents on the helper-lib repo, but the fastest way to get acquainted with the helpers is to pull down this repo, install the dependencies (<code>npm install</code>), and run <code>grunt build</code>. Then dive right into the <code>./src</code> and <code>./dest</code> folders to look around. </p>
+<p>If you want to see the types of helpers that are included, you can read over the Table of Contents on the helper-lib repo, but the fastest way to get acquainted with the helpers is to pull down this repo, install the dependencies (<code>npm install</code>), and run <code>grunt build</code>. Then dive right into the <code>./src</code> and <code>./dest</code> folders to look around.</p>
 <h2>The &quot;assemble&quot; task</h2>
 <h3>Overview</h3>
 <p>In the project&#39;s Gruntfile, the example <code>assemble</code> task is pre-loaded with paths and options following standard Grunt.js conventions:</p>
@@ -91,7 +91,7 @@ title: YAML Front-Matter Example
 &lt;h1&gt; Home &lt;/h1&gt;
 Page content here ...</code></pre>
 <h3>Options</h3>
-<p>Visit <a href="https://github.com/assemble/assemble/wiki">Assemble&#39;s documentation</a> to learn about the available task and target options as well as how to configure them. Also, if are not yet familiar with Grunt.js, please consider visiting the Grunt documentation to learn more about [configuring tasks][configuring-tasks]. </p>
+<p>Visit <a href="https://github.com/assemble/assemble/wiki">Assemble&#39;s documentation</a> to learn about the available task and target options as well as how to configure them. Also, if are not yet familiar with Grunt.js, please consider visiting the Grunt documentation to learn more about [configuring tasks][configuring-tasks].</p>
 <h4>flatten</h4>
 <p>Type: <code>Boolean</code> (optional)
 Default: <code>false</code></p>
@@ -104,7 +104,7 @@ Default: <code>undefined</code></p>
 <h4>partials</h4>
 <p>Type: <code>Object|Array</code> (optional)
 Default: <code>undefined</code></p>
-<p>Specifies the Handlebars <a href="https://github.com/assemble/assemble/wiki/partials">partials</a> files, or paths to the directories of files to be used. </p>
+<p>Specifies the Handlebars <a href="https://github.com/assemble/assemble/wiki/partials">partials</a> files, or paths to the directories of files to be used.</p>
 <p>Learn more about <a href="https://github.com/assemble/assemble/wiki/partials">options.partials</a></p>
 <h4>assets</h4>
 <p>Type: <code>String</code> (optional)
@@ -113,7 +113,7 @@ Default: <code>undefined</code></p>
 <h4>data</h4>
 <p>Type: <code>Object|Array</code> (optional)
 Default: <code>src/data</code></p>
-<p>Retrieves data from any specified <code>JSON</code> and/or <code>YAML</code> files to populate the templates when rendered. Data gets passed through the <code>data</code> object to the options on the assemble task, then to the context in your templates. </p>
+<p>Retrieves data from any specified <code>JSON</code> and/or <code>YAML</code> files to populate the templates when rendered. Data gets passed through the <code>data</code> object to the options on the assemble task, then to the context in your templates.</p>
 <p>Learn more about <a href="https://github.com/assemble/assemble/wiki/data">data</a></p>
 <h3>Usage Examples</h3>
 <p>Here are some examples of how you can customize the Assemble task for different use cases. Visit the <a href="https://github.com/assemble/assemble-examples">assemble-examples</a> repo to see more example projects.</p>
@@ -155,9 +155,9 @@ Default: <code>src/data</code></p>
     files: {
       // Here we build &quot;partials&quot; and &quot;snippets&quot; into pages
       // but we still specify these in options.partials since
-      // some partials &quot;pull in&quot; other partials. 
+      // some partials &quot;pull in&quot; other partials.
       &#39;docs/components/&#39;: [
-        &#39;templates/partials/**/*.hbs&#39;, 
+        &#39;templates/partials/**/*.hbs&#39;,
         &#39;templates/snippets/**/*.hbs&#39;
       ]
     }
@@ -187,7 +187,7 @@ Default: <code>src/data</code></p>
 
   files_array: [
     { expand: true, flatten: true, cwd: &#39;path/to/templates&#39;, src: [&#39;**/*.hbs&#39;], dest: &#39;path/to/dest/&#39;, ext: &#39;.md&#39; }
-  ] 
+  ]
 }</code></pre>
 <h2>Authors</h2>
 <p><strong>Jon Schlinkert</strong></p>
@@ -204,7 +204,7 @@ Default: <code>src/data</code></p>
 <p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Use <a href="https://github.com/assemble/assemble/">Assemble</a> to build and maintain your gh-pages, blog or documentation. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
 <h2>Release History</h2>
 <ul>
-<li>2013-05-12    v0.1.0    First commit. </li>
+<li>2013-05-12    v0.1.0    First commit.</li>
 </ul>
 
 

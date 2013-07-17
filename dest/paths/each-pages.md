@@ -1,6 +1,6 @@
 # each-pages.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 # Pages Collection and Relative Helper
@@ -63,6 +63,8 @@ From **../page.dest**, to: **this.dest**: switch.md
 From **../page.dest**, to: **this.dest**: expand.md
 
 From **../page.dest**, to: **this.dest**: inspect.md
+
+From **../page.dest**, to: **this.dest**: jsonld.md
 
 From **../page.dest**, to: **this.dest**: property.md
 
@@ -187,95 +189,101 @@ From **../page.dest**, to: **assets**: ../../../assets
 
 From **../page.dest**, to: **assets**: ../../../assets
 
-```
-``` html
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
-
-From **../page.dest**, to: **"output/assets"**: ../../output/assets
+From **../page.dest**, to: **assets**: ../../../assets
 
 ```
 ``` html
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+From **../page.dest**, to: **"output/assets"**: ../../output/assets
+
+```
+``` html
+
+From **../page.dest**, to: **"src/content"**: ../../src/content
 
 From **../page.dest**, to: **"src/content"**: ../../src/content
 
@@ -399,6 +407,7 @@ From **../page.dest**, to: **"src/content"**: ../../src/content
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -420,6 +429,7 @@ From **../page.dest**, to: **"src/content"**: ../../src/content
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -610,6 +620,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -1097,9 +1115,25 @@ page.basename: each-pages
 page.extname:  
 page.ext:      
 
+#### each-pages.md
+page.dirname:  dest/paths
+page.filename: each-pages.md
+page.pagename: each-pages.md
+page.basename: each-pages
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### each-pages.md
+dirname:       dest/paths
+filename:      each-pages.md
+pagename:      each-pages.md
+basename:      each-pages
+extname:       
+ext:           
 
 #### each-pages.md
 dirname:       dest/paths

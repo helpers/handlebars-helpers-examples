@@ -1,6 +1,6 @@
 # authors.md output
 
-This layout is used to demonstrate how paths will be constructed in 
+This layout is used to demonstrate how paths are constructed in
 different contexts, and using different src-dest arrangements.
 
 # Authors helper
@@ -59,6 +59,7 @@ As with JavaScript, helper names are case sensitive. So we take advantage of tha
 [switch](../assets) 
 [expand](../assets) 
 [inspect](../assets) 
+[jsonld](../assets) 
 [property](../assets) 
 [stringify](../assets) 
 [value](../assets) 
@@ -80,6 +81,7 @@ As with JavaScript, helper names are case sensitive. So we take advantage of tha
 
 
 ### {{#each pages}} "this" context
+
 
 #### collections-categories.md
 this.dirname:  dest/paths
@@ -270,6 +272,14 @@ this.dirname:  dest/paths
 this.filename: inspect.md
 this.pagename: inspect.md
 this.basename: inspect
+this.extname:  
+this.ext:      
+
+#### jsonld.md
+this.dirname:  dest/paths
+this.filename: jsonld.md
+this.pagename: jsonld.md
+this.basename: jsonld
 this.extname:  
 this.ext:      
 
@@ -757,9 +767,25 @@ page.basename: authors
 page.extname:  
 page.ext:      
 
+#### authors.md
+page.dirname:  dest/paths
+page.filename: authors.md
+page.pagename: authors.md
+page.basename: authors
+page.extname:  
+page.ext:      
+
 
 
 ### {{#each pages}} "page" context
+
+#### authors.md
+dirname:       dest/paths
+filename:      authors.md
+pagename:      authors.md
+basename:      authors
+extname:       
+ext:           
 
 #### authors.md
 dirname:       dest/paths
